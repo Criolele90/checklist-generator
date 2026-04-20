@@ -623,7 +623,6 @@ export default function Home() {
                   shading: {
                     fill: "C0E6F5",
                     color: "000000",
-                    val: "clear",
                   },
                   children: [
                     new Paragraph({
