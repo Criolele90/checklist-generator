@@ -206,8 +206,7 @@ export default function Home() {
       shading: {
         fill: "C0E6F5",
         color: "000000",
-        val: "clear",
-      },
+            },
       verticalAlign: VerticalAlign.CENTER,
       children: [
         new Paragraph({
