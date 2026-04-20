@@ -1,0 +1,1451 @@
+[
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.1",
+    "domanda": "L’organizzazione ha determinato i fattori esterni e interni rilevanti per le sue finalità e indirizzi strategici e che possono influenzare la sua capacità di conseguire il(i) risultato(i) atteso(i) per il proprio sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.2",
+    "domanda": "Le parti interessate rilevanti per il sistema di gestione e le aspettative delle stesse sono state identificate?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.1",
+    "domanda": "Il PIMS è stato integrato con l’ISMS esistente?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.1",
+    "domanda": "Esiste un piano documentato per l’implementazione del PIMS?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.1",
+    "domanda": "Sono stati identificati i fattori interni ed esterni rilevanti per la privacy (es. normative, rischi)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.1",
+    "domanda": "Questi fattori sono documentati e aggiornati regolarmente?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "22301",
+    "req": "4.2.2",
+    "domanda": "L’azienda ha individuato i requisiti legali per il BCMS (ISO22301)",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.3",
+    "domanda": "L'organizzazione ha determinato i confini e l'applicabilità del sistema di gestione per stabilirne il campo di applicazione? È disponibile come informazione documentata?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.3",
+    "domanda": "I requisiti dichiarati come non applicabili (ai sensi dell’ISO 9001) sono giustificati e non incidono sulla capacità del SG di assicurare la conformità dei prodotti e dei servizi e l’aumento della soddisfazione del cliente?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.3",
+    "domanda": "Sono stati presi in considerazione gli obblighi di adeguamento nella definizione del campo di applicazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.2",
+    "domanda": "Comprendere le esigenze e le aspettative delle parti interessate",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.2",
+    "domanda": "Sono state identificate le parti interessate rilevanti (es. titolari dei dati, autorità)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.2",
+    "domanda": "Le loro esigenze e aspettative in materia di privacy sono documentate?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.3",
+    "domanda": "Determinazione dell’ambito di applicazione del sistema di gestione della sicurezza delle informazioni",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.3",
+    "domanda": "L’ambito del PIMS è stato definito chiaramente e include tutti i processi di trattamento dei dati personali?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.3",
+    "domanda": "L’ambito è documentato e approvato dal management?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.4",
+    "domanda": "L'organizzazione ha stabilito, implementato, mantenuto e migliorato continuamente il SG, i processi necessari e la loro interazione in conformità agli standard?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.4",
+    "domanda": "L'organizzazione ha determinato, implementato e mantiene sotto controllo i processi necessari per il sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "4.4",
+    "domanda": "L’organizzazione mantiene e conserva, ove necessario, informazioni documentate per supportare il funzionamento dei propri processi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.4",
+    "domanda": "È stato istituito un PIMS integrato con l’ISMS?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "27701",
+    "req": "5.2.4",
+    "domanda": "Il PIMS è operativo e documentato?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "22301",
+    "req": "4.2.1",
+    "domanda": "l’organizzazione ha rilevato le parti interessate rilevanti per il BCMS",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "ISO 37301",
+    "req": "4.5",
+    "domanda": "L'organizzazione ha implementato processi per identificare sistematicamente gli obblighi di compliance derivanti da attività, prodotti e servizi, valutarne l’impatto operativo e mantenerne il controllo nel tempo?In particolare:\r\n\r\na) vengono identificati nuovi obblighi di compliance o modifiche a quelli esistenti su base continuativa?\r\nb) viene valutato l’impatto dei cambiamenti identificati e quali modifiche gestionali vengono attuate per mantenere la conformità?\r\nc) vengono mantenute informazioni documentate per garantire la tracciabilità degli obblighi di compliance?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "ISO 37001\r\nISO 37301",
+    "req": "4.5.1/4.6",
+    "domanda": "l’organizzazione conduce e aggiorna regolarmente le valutazioni dei rischi di compliance/ anticorruzione, assicurando che i rischi siano sistematicamente identificati, analizzati, prioritarizzati e trattati, sia rispetto alle attività interne che a quelle affidate a terze parti?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "ISO 37301",
+    "req": "4.5.2",
+    "domanda": "Sono stati stabiliti dei criteri per valutare il proprio livello di rischio di corruzione, che deve tenere in considerazione le politiche e gli obiettivi dell'organizzazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "ISO 37301",
+    "req": "4.5.3",
+    "domanda": "La valutazione del rischio di corruzione è sottoposta a riesame a cadenze regolari in modo da poter valutare accuratamente i cambiamenti e le nuove informazioni in base a tempistiche e frequenze definite dall'organizzazione e/o in caso di un cambiamento significativo alla struttura alle attività dell'organizzazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "ISO 37301",
+    "req": "4.5.4",
+    "domanda": "L’organizzazione conserva informazioni documentate che dimostrano che la valutazione del rischio di corruzione sia stata condotta e utilizzata per progettare o migliorare il sistema di gestione per la prevenzione della corruzione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "ISO 20121",
+    "req": "4.5",
+    "domanda": "Principi di sviluppo sostenibile, dichiarazione di intenti e valori \r\nL'organizzazione ha definito, documentato e comunicato i propri principi fondamentali di sviluppo sostenibile sotto forma di dichiarazione di intenti e valori?\r\n\r\nIn particolare:\r\nI principi includono considerazioni relative alla gestione, inclusività, integrità e trasparenza?\r\nL’organizzazione ha definito e documentato:\r\nlo scopo primario dell’organizzazione rispetto agli eventi gestiti?\r\ni propri valori fondamentali in relazione alle attività, ai prodotti e ai servizi correlati agli eventi?\r\n\r\nTali principi, scopo e valori sono utilizzati come quadro di riferimento per la definizione di politiche, obiettivi e traguardi, così come previsto dal campo di applicazione del sistema di gestione sostenibile degli eventi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "4. Analisi del Contesto",
+    "standard": "",
+    "req": "Req",
+    "domanda": "Descrizione",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "",
+    "req": "5.1",
+    "domanda": "Leadership\r\nL’alta direzione dimostra leadership e impegno attivo nel garantire l’efficacia del sistema di gestione, promuovendone l’integrazione nei processi dell’organizzazione e supportandone il miglioramento continuo?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "9001",
+    "req": "5.1.2",
+    "domanda": "L’alta direzione dimostra leadership e impegno nel garantire la comprensione e la soddisfazione dei requisiti del cliente? Viene mantenuta nel tempo la focalizzazione sull’aumento della soddisfazione del cliente?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37001",
+    "req": "5.1.1",
+    "domanda": "l’organo direttivo dimostra leadership e impegno nella supervisione del sistema di gestione per la prevenzione della corruzione, garantendone l’allineamento strategico, l’adeguatezza delle risorse, il riesame periodico e la verifica della sua efficacia?\r\na) L’organo direttivo ha approvato formalmente la politica anticorruzione dell’organizzazione?\r\nb) È verificato che strategia e politica anticorruzione siano allineate tra loro?\r\nc) L’organo riceve, a intervalli programmati, informazioni sul contenuto e sul funzionamento del sistema di gestione anticorruzione, e le sottopone a riesame?\r\nd) Viene richiesta e verificata l’assegnazione di risorse adeguate e appropriate al funzionamento del sistema?\r\ne) È esercitata una sorveglianza ragionevole sull’attuazione del sistema da parte dell’alta direzione e sulla sua efficacia complessiva?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37301",
+    "req": "5.1.1",
+    "domanda": "L’organismo di governo e/o l’alta direzione dimostrano leadership e impegno nel garantire l’efficacia del sistema di gestione per la compliance, assicurando coerenza con i valori organizzativi, integrazione nei processi decisionali, disponibilità di risorse, comunicazione attiva e attenzione alle segnalazioni e alla noncompliance?\r\nSono stati stabiliti la politica e gli obiettivi per la compliance, coerenti con gli indirizzi strategici?\r\nI requisiti di compliance sono integrati nei processi aziendali?\r\nLe risorse necessarie per il sistema di gestione per la compliance sono identificate e rese disponibili?\r\nViene comunicata l’importanza della gestione per la compliance e della conformità ai requisiti?\r\nÈ garantito che il sistema raggiunga i risultati attesi?\r\nIl personale è guidato e supportato nel contribuire all’efficacia del sistema di gestione per la compliance?\r\nViene promosso il miglioramento continuo?\r\nAltri ruoli gestionali sono supportati nella leadership e responsabilità in materia di compliance?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37001",
+    "req": "5.1.2",
+    "domanda": "L’alta direzione dimostra leadership e impegno attivo nel garantire l’efficacia del sistema di gestione per la prevenzione della corruzione, integrandolo nei processi aziendali, supportando il personale, promuovendo una cultura etica, e assicurando strumenti adeguati di comunicazione, miglioramento e protezione dei segnalanti?\r\na) Il sistema anticorruzione è stato stabilito, attuato, mantenuto e riesaminato dall’alta direzione in coerenza con rischi, politica e obiettivi?\r\nb) I requisiti del sistema sono integrati nei processi operativi dell’organizzazione?\r\nc) Sono impiegate risorse adeguate e appropriate al funzionamento del sistema anticorruzione?\r\nd) Viene fatta comunicazione interna ed esterna efficace sulla politica anticorruzione?\r\ne) L’importanza della conformità al sistema è comunicata internamente?\r\nf) Il sistema è progettato in modo efficace per raggiungere gli obiettivi previsti?\r\ng) La direzione guida e sostiene il personale nel contribuire all’efficacia del sistema?\r\nh) Viene promossa attivamente una cultura anti-corruzione?\r\ni) Sono promosse azioni di miglioramento continuo del sistema?\r\nj) Gli altri ruoli gestionali sono sostenuti per dimostrare leadership e responsabilità nella prevenzione?\r\nk) Sono incoraggiate le segnalazioni di atti corruttivi tramite canali e procedure specifiche?\r\nl) È assicurato che nessuno subisca ritorsioni per segnalazioni effettuate in buona fede?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37301",
+    "req": "5.1.2",
+    "domanda": "L’organizzazione sviluppa, mantiene e promuove una cultura della compliance a tutti i livelli, garantendo che organismi di governo, alta direzione e management dimostrino un impegno attivo e coerente nel definire e sostenere standard comportamentali condivisi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37301",
+    "req": "5.1.3",
+    "domanda": "L’organismo di governo e l’alta direzione assicurano che la funzione di compliance operi in modo indipendente, con accesso diretto al vertice e con un livello adeguato di autorità e competenza per esercitare efficacemente il proprio ruolo?”",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "27701",
+    "req": "5.3.2",
+    "domanda": "Il top management dimostra impegno per il PIMS (es. partecipazione a riunioni, assegnazione di risorse)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "27701",
+    "req": "5.3.2",
+    "domanda": "Il top management dimostra impegno per il PIMS (es. partecipazione a riunioni, assegnazione di risorse)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "",
+    "req": "5.2.1",
+    "domanda": "Politica del sistema di gestione\r\nStabilire la politica per il sistema di gestione\r\n\r\nL'alta direzione ha stabilito, attuato e mantiene una politica che:\r\na) è appropriata alle finalità e al contesto dell'organizzazione e supporta i suoi indirizzi strategici?\r\nb) costituisce un quadro di riferimento per fissare gli obiettivi?\r\nc) comprende un impegno a soddisfare i requisiti applicabili?\r\nd) comprende un impegno per il miglioramento continuo del sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "",
+    "req": "5.2.2",
+    "domanda": "Comunicare la politica\r\n\r\nLa politica per la qualità:\r\na) è disponibile e mantenuta come informazione documentata?\r\nb) è comunicata, compresa e applicata all'interno dell'organizzazione?\r\nc) è disponibile alle parti interessate rilevanti, per quanto appropriato?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "",
+    "req": "5.3",
+    "domanda": "Ruoli e responsabilità\r\nL’Alta Direzione assicura che le responsabilità e le autorità per i ruoli pertinenti siano assegnate e comunicate all’interno dell’Organizzazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37001\r\n37301",
+    "req": "5.3.2",
+    "domanda": "E' stata istituita la funzione di conformità (per la prevenzione della corruzione e per la compliance in generale)? l’organizzazione ne garantisce l’autorità, l’indipendenza, le competenze, l’accesso alle informazioni e l’effettiva capacità di esercitare un ruolo attivo e di supervisione a supporto del sistema di gestione?\r\nA supporto della domanda:\r\nNomina e struttura della funzione\r\nÈ stata formalmente designata una funzione di conformità/compliance?\r\nSono chiaramente definiti i ruoli, le responsabilità e l’autorità?\r\n\r\nSupervisione e responsabilità\r\nLa funzione supervisiona la progettazione, attuazione e mantenimento del sistema?\r\nHa il compito di monitorare, valutare e riferire sulle performance e criticità?\r\nIndipendenza e accesso\r\nLa funzione ha accesso diretto all’alta direzione e/o all’organo direttivo?\r\nÈ indipendente da influenze indebite nelle sue attività?\r\n\r\nRisorse e competenze\r\nSono assegnate persone qualificate e risorse adeguate alla funzione?\r\nIl personale è competente in materia di leggi, regolamenti e standard applicabili?\r\n\r\nSupporto all’organizzazione\r\nFornisce orientamento e assistenza al personale sui temi della compliance?\r\nÈ coinvolta nelle fasi iniziali dei processi decisionali?\r\nÈ in grado di rilevare e trattare le preoccupazioni (whistleblowing, segnalazioni)?\r\n\r\nDocumentazione e reporting\r\nSono documentate le attività di valutazione dei rischi e allineamento con obblighi?\r\nEsistono report di compliance periodici? Partecipano al riesame?\r\nGestione di strutture multiple o esternalizzate (ISO 37001)\r\nIn caso di esternalizzazione, come si garantisce che il personale rispetti i requisiti della norma?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37301",
+    "req": "5.3.3",
+    "domanda": "il management supporta attivamente l’attuazione del sistema di gestione per la compliance, assicurando che i comportamenti, i processi e le prassi operative sotto la propria responsabilità siano coerenti con gli obblighi di compliance, e favorendo la comunicazione, la formazione, la gestione dei rischi e delle azioni correttive?\r\nSupporto alla funzione di compliance\r\nIl management coopera attivamente con la funzione di compliance?\r\nPromuove lo stesso atteggiamento tra i collaboratori?\r\n\r\nConformità nei team sotto responsabilità diretta\r\nIl personale rispetta gli obblighi e le procedure?\r\nCi sono evidenze di controllo e vigilanza interna?\r\n\r\nGestione dei rischi di compliance\r\nI responsabili identificano e comunicano i rischi nelle proprie aree operative?\r\n\r\nIntegrazione degli obblighi di compliance nei processi di business\r\nLe attività e i documenti gestiti (procedure, istruzioni, contratti, check list) riflettono requisiti di compliance?\r\n\r\nFormazione e competenze\r\nIl management partecipa attivamente alle attività formative?\r\nSostiene la formazione del personale sulle tematiche di compliance?\r\n\r\nSviluppo della consapevolezza e della cultura\r\nIncoraggia il personale a riconoscere, rispettare e valorizzare la compliance?\r\n\r\nGestione delle preoccupazioni\r\nI collaboratori sono liberi di segnalare questioni senza temere ritorsioni?\r\nIl management sostiene il whistleblowing?\r\n\r\nGestione di incidenti e azioni correttive\r\nIl management partecipa alla risoluzione degli incidenti di compliance?\r\nLe azioni correttive raccomandate vengono attuate tempestivamente?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37001",
+    "req": "5.3.3",
+    "domanda": "l’organizzazione gestisce la delega di poteri decisionali in aree a rischio di corruzione, assicurandosi che il livello di autorità sia adeguato, privo di conflitti di interesse, e sottoposto a controlli e verifiche periodiche da parte dell’alta direzione?\r\n\r\nEsistenza di deleghe in contesti a rischio\r\nSono state delegate decisioni in ambiti o processi dove il rischio di corruzione è superiore al livello basso?\r\nL’organizzazione ha valutato i rischi associati a tali deleghe?\r\n\r\nProcesso decisionale e controlli\r\nÈ in atto un processo decisionale formalizzato che preveda:\r\n\r\nVerifica dell’adeguatezza del livello di autorità del delegato?\r\nValutazione e gestione dei conflitti di interesse?\r\nPrescrizioni di controllo interno o dual control?\r\n\r\nSupervisione da parte dell’alta direzione\r\nL’alta direzione verifica periodicamente i processi decisionali delegati?\r\nTali verifiche sono formalmente registrate?\r\n\r\nRuoli e responsabilità\r\nÈ chiaro che la delega non solleva l’alta direzione dalle responsabilità generali?\r\nSono definiti limiti, condizioni e modalità di esercizio della delega?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "37301",
+    "req": "5.3.4",
+    "domanda": "l’organizzazione assicura che tutto il personale sia coinvolto nell’attuazione del sistema di gestione per la compliance, aderendo agli obblighi applicabili, segnalando le problematiche rilevanti e partecipando alle attività di formazione previste?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "27701",
+    "req": "5.3.3",
+    "domanda": "Sono stati definiti ruoli e responsabilità per la gestione del PIMS?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "27701",
+    "req": "5.3.3",
+    "domanda": "Le autorità sono assegnate in modo chiaro e documentato?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "45001",
+    "req": "5.4",
+    "domanda": "Consultazione e partecipazione dei lavoratori \r\nL’organizzazione ha stabilito, attuato e mantiene uno o più processi per assicurare la consultazione e la partecipazione dei lavoratori – e dei loro rappresentanti ove istituiti – a tutti i livelli e funzioni applicabili, nel ciclo di vita del sistema di gestione per la salute e sicurezza sul lavoro (SGSSL)?\r\n▢ L’organizzazione fornisce modalità, tempo, formazione e risorse adeguate per la consultazione e la partecipazione dei lavoratori?\r\n▢ L’accesso alle informazioni sul SGSSL è garantito in modo tempestivo, chiaro e comprensibile?\r\n▢ Sono stati individuati ed eliminati (o ridotti al minimo) eventuali ostacoli o barriere alla partecipazione?\r\n\r\nl'organizzazione favorisce la consultazione dei lavoratori senza funzioni manageriali sulle attività descritte dalla norma (punti da 1 a 9 lettera d e punti da 1 a 7 lettera e)?\r\n\r\nAltri elementi specifici da verificare\r\n▢ È presente una rappresentanza dei lavoratori (ove applicabile), e questa è effettivamente coinvolta nei processi di consultazione e partecipazione?\r\n▢ È prevista formazione gratuita e durante l’orario di lavoro per favorire la partecipazione dei lavoratori, dove possibile?\r\nIl processo di consultazione e partecipazione non esclude i lavoratori senza incarichi manageriali?",
+    "esito": ""
+  },
+  {
+    "capitolo": "5. Leadership",
+    "standard": "",
+    "req": "Req.",
+    "domanda": "Descrizione",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.1",
+    "domanda": "Azioni per affrontare i rischi e le opportunità\r\nNella pianificazione del sistema di gestione sono determinate i rischi e le opportunità che necessitano trattamento?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.1",
+    "domanda": "Sono pianificate azioni di trattamento dei rischi e delle opportunità e modalità d’integrazione e implementazione di tali azioni nel sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.1",
+    "domanda": "Sono disponibili informazioni documentate relative a: rischi e opportunità, processi di identificazione degli stessi e la pianificazione delle azioni?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "9001",
+    "req": "6.1",
+    "domanda": "Sono stati determinati gli aspetti connessi ad attività, prodotti, servizi e loro impatti associati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "14001",
+    "req": "6.1",
+    "domanda": "Nella determinazione degli impatti ambientali è stata considerata la prospettiva del ciclo di vita?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "14001",
+    "req": "6.1",
+    "domanda": "Sono stati determinati gli aspetti ambientali significativi utilizzando dei criteri stabiliti?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "14001\r\n45001",
+    "req": "6.1",
+    "domanda": "Sono stati determinati i rischi relativi agli obblighi di conformità relativi ai propri aspetti SSL e ambientali ed applicabili alla propria organizzazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "14001",
+    "req": "6.1.2",
+    "domanda": "Aspetti ambientali\r\nL’organizzazione identifica, valuta, comunica e tiene sotto controllo gli aspetti ambientali delle proprie attività, prodotti e servizi, assicurandosi che quelli significativi siano gestiti in modo coerente con il contesto operativo, con una visione di ciclo di vita, tenendo conto dei cambiamenti, delle condizioni anomale e delle emergenze?\r\nDa approfondire:\r\nIdentificazione degli aspetti ambientali\r\nL’organizzazione ha identificato tutti gli aspetti ambientali che può controllare o influenzare?\r\nÈ adottata una prospettiva di ciclo di vita nella valutazione?\r\n\r\nValutazione e significatività\r\nSono stati stabiliti e applicati criteri chiari per determinare la significatività degli aspetti?\r\nSi tiene conto di:\r\na) Cambiamenti pianificati o nuovi sviluppi\r\nb) Condizioni anomale e situazioni di emergenza prevedibili?\r\n\r\nComunicazione interna\r\nGli aspetti ambientali significativi sono comunicati ai diversi livelli e funzioni dell’organizzazione?\r\n\r\nInformazioni documentate\r\nSono mantenute informazioni documentate su:\r\nGli aspetti ambientali e i relativi impatti\r\nI criteri di valutazione della significatività\r\nGli aspetti ambientali significativi identificati\r\n\r\nRischi e opportunità ambientali\r\nGli aspetti significativi sono collegati alla gestione dei rischi ambientali (minacce) e delle opportunità (benefici)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "45001",
+    "req": "6.1.2",
+    "domanda": "Identificazione dei pericoli, la valutazione dei rischi e delle opportunità\r\nL’organizzazione identifica in modo sistematico, continuo e proattivo i pericoli per la salute e sicurezza sul lavoro?\r\nSono presi in considerazione i seguenti elementi?\r\na) Organizzazione del lavoro e fattori sociali (es. carichi di lavoro, molestie, leadership, cultura)?\r\nb) Situazioni di routine e non di routine legate a:\r\n• infrastrutture, attrezzature, sostanze, condizioni fisiche\r\n• progettazione e modifiche di prodotti/servizi/procedimenti\r\n• fattori umani\r\n• modalità di esecuzione del lavoro\r\nc) Incidenti rilevanti, interni o esterni, inclusi near miss ed emergenze?\r\nd) Situazioni di potenziale emergenza?\r\ne) Categorie di persone esposte o potenzialmente coinvolte, inclusi lavoratori, appaltatori, visitatori, e terze parti?\r\nf) Lavoratori in luoghi non sotto diretto controllo dell’organizzazione?\r\ng) Fattori correlati alla progettazione, vicinanza o interazione di attività/processi?\r\nh) Cambiamenti pianificati e imprevisti, sia a livello organizzativo, sia nei processi o nelle attività?\r\n\r\nEsiste un processo documentato per la raccolta, analisi e aggiornamento dei pericoli identificati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "42001",
+    "req": "6.1.2",
+    "domanda": "AI Risk Assessment\r\nL’organizzazione ha definito e implementato un processo di valutazione del rischio AI che sia coerente con la politica AI e gli obiettivi stabiliti, permetta valutazioni ripetibili e comparabili, identifichi e analizzi i rischi legati al mancato raggiungimento degli obiettivi AI, e ne valuti la gravità e la probabilità, confrontandoli con criteri predefiniti e documentando il processo stesso?\r\nNello specifico:\r\n□ il processo di valutazione dei rischi legati all’intelligenza artificiale è costruito sulla base della politica AI e degli obiettivi AI dell’organizzazione? Sono stati considerati i principi, gli impegni e le priorità espresse nella politica AI nella definizione dei criteri di rischio? Il contenuto degli obiettivi AI (es. affidabilità, etica, inclusività, accuratezza, trasparenza, ecc.) è stato effettivamente utilizzato per orientare l’identificazione e la valutazione dei rischi?\r\n□ Il processo di valutazione dei rischi AI è progettato in modo da garantire risultati coerenti, validi e comparabili nel tempo? Sono disponibili procedure che assicurino tale coerenza?\r\n□ Vengono identificati i rischi che ostacolano o supportano il raggiungimento degli obiettivi dell’organizzazione relativi all’IA? Esistono criteri o strumenti specifici utilizzati per questa attività?\r\n□ vengono analizzate le conseguenze potenziali dei rischi AI per l’organizzazione, gli individui e la società nel caso in cui si materializzassero? Sono disponibili esempi documentati di queste analisi?\r\n□ E' disponibile un approccio oggettivo per valutare la probabilità realistica che i rischi AI si concretizzino? Esiste una scala documentata di probabilità\r\n□ vengono determinati i livelli di rischio? L’organizzazione ha definito delle soglie o classi di rischio per qualificare l’esposizione?\r\n□ I risultati dell’analisi del rischio AI vengono confrontati con i criteri di rischio stabiliti (rif. 6.1.1)? Come viene registrato l’esito di questo confronto?\r\n□  viene effettuata la prioritizzazione dei rischi identificati? Esiste un piano o registro che evidenzia l’ordine di trattamento dei rischi AI?\r\n\r\nL’organizzazione conserva informazioni documentate del processo di valutazione dei rischi AI?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "42001",
+    "req": "6.1.3",
+    "domanda": "AI Risk Treatment\r\nL’organizzazione ha definito, attuato e documentato un processo strutturato per il trattamento dei rischi legati all’AI, basato sui risultati della valutazione dei rischi?\r\nNello specifico:\r\n▢ Sono state selezionate opzioni appropriate per il trattamento dei rischi dell’IA?\r\n▢ L’organizzazione ha determinato tutti i controlli necessari per attuare le opzioni di trattamento dei rischi, confrontandoli con quelli dell’Allegato A per verificarne la completezza?\r\n▢ Sono stati considerati i controlli rilevanti dell’Allegato A per l’attuazione delle opzioni di trattamento del rischio?\r\n▢ Sono stati identificati eventuali controlli aggiuntivi, oltre quelli dell’Allegato A, necessari per l’implementazione completa del trattamento dei rischi?\r\n▢ È stata utilizzata la guida dell’Allegato B per supportare l’implementazione dei controlli individuati?\r\n▢ È stata prodotta una dichiarazione di applicabilità che elenchi i controlli selezionati con la giustificazione delle inclusioni ed esclusioni?\r\n▢ È stato formalizzato un piano di trattamento dei rischi dell’IA, approvato dalla direzione designata, comprensivo dei rischi residui accettati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "42001",
+    "req": "6.1.4",
+    "domanda": "AI system impact assessment\r\nL’organizzazione ha definito e attua un processo per valutare le conseguenze potenziali derivanti dallo sviluppo, fornitura o uso dei sistemi di IA su individui, gruppi o società?\r\n▢ Il processo di valutazione dell’impatto del sistema di IA considera l’uso previsto e prevedibile, nonché i potenziali abusi, e valuta le conseguenze sugli individui, gruppi e società?\r\n▢ Sono considerati il contesto tecnico e sociale specifico, le giurisdizioni applicabili e il luogo in cui il sistema IA è distribuito?\r\n▢ I risultati della valutazione dell’impatto del sistema di IA sono documentati e disponibili, ove opportuno, per le parti interessate rilevanti?\r\n▢ I risultati della valutazione dell’impatto sono presi in considerazione nel processo di valutazione dei rischi IA (vedi 6.1.2)?\r\n▢ L’organizzazione applica, se necessario, valutazioni specifiche per ambito (es. sicurezza, privacy, impatti sociali) come parte della gestione complessiva del rischio?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "27001",
+    "req": "6.1.2",
+    "domanda": "Valutazione del rischio per la sicurezza delle informazioni\r\nL’organizzazione ha definito e applicato un processo di valutazione dei rischi per la sicurezza delle informazioni che:\r\na) stabilisce e mantiene criteri di rischio per la sicurezza delle informazioni, inclusi:\r\n\r\ni criteri di accettazione del rischio; e i criteri per l’esecuzione delle valutazioni dei rischi per la sicurezza delle informazioni;\r\nb) garantisce che le valutazioni dei rischi ripetute producano risultati coerenti, validi e confrontabili;\r\nc) identifica i rischi per la sicurezza delle informazioni:\r\napplicando il processo di valutazione dei rischi per individuare i rischi legati alla perdita di riservatezza, integrità e disponibilità delle informazioni nel campo di applicazione del sistema di gestione della sicurezza delle informazioni; e\r\nidentificando i proprietari dei rischi;\r\nd) analizza i rischi per la sicurezza delle informazioni:\r\nvalutando le potenziali conseguenze derivanti dal verificarsi dei rischi identificati;\r\nvalutando la probabilità realistica di accadimento dei rischi identificati; e determinando i livelli di rischio;\r\ne) valuta i rischi per la sicurezza delle informazioni:\r\nconfrontando i risultati dell’analisi dei rischi con i criteri di rischio stabiliti; e definendo la priorità dei rischi analizzati ai fini del trattamento del rischio?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "27001",
+    "req": "6.1.3",
+    "domanda": "Trattamento dei rischi per la sicurezza delle informazioni\r\nTrattamento del rischio di sicurezza delle informazioni:\r\nL'organizzazione ha definito e applicato un processo di trattamento del rischio per la sicurezza delle informazioni per:\r\na)\tha scelto le opzioni appropriate per il trattamento del rischio per la sicurezza delle informazioni, tenendo conto dei risultati della valutazione del rischio?\r\nb)\tHa determinato tutti i controlli necessari per implementare le operazioni di trattamento del rischio per la sicurezza delle informazioni scelte?\r\nc)\tHa verificato i controlli determinati al punto 6.1.3 b) con quelli dell'Allegato A e verificato che non siano stati omessi i controlli necessari?\r\n(I controlli di sicurezza delle informazioni elencati nell'Allegato A non sono esaustivi e, se necessario, è possibile includere ulteriori controlli di sicurezza delle informazioni. sicurezza delle informazioni possono essere inclusi, se necessario)\r\nd)\tÈ presente una dichiarazione di applicabilità che contenga:\r\n                   - i controlli necessari (vedere 6.1.3 b) e c));\r\n                   - la giustificazione della loro inclusione/esclusione;\r\n                   - se i controlli necessari sono implementati o meno; e\r\n                   - la giustificazione dell'esclusione di uno qualsiasi dei controlli dell'Allegato A.\r\ne)\tÈ stata formulata un piano di trattamento dei rischi per la sicurezza delle informazioni?\r\nf)\tÈ stato ottenuta l'approvazione del piano di trattamento dei rischi per la sicurezza delle informazioni da parte dei proprietari dei rischi e l'accettazione dei rischi residui per la sicurezza delle informazioni?\r\n\r\nSono conservate informazioni documentate sul processo di trattamento del rischio per la sicurezza delle informazioni.",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "27701",
+    "req": "5.4.1",
+    "domanda": "È stata eseguita una valutazione dei rischi legati alla privacy?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "27701",
+    "req": "5.4.1",
+    "domanda": "Sono state pianificate e implementate azioni per affrontare i rischi e le opportunità?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "ISO14001\r\nISO45001",
+    "req": "6.1.3",
+    "domanda": "Obblighi di adeguamento/ 6.1.3 Determinazione dei requisiti legali e di altri requisiti \r\nL’organizzazione determina, monitora e integra in modo continuo i requisiti legali e gli altri obblighi di conformità applicabili (sia ambientali sia di salute e sicurezza sul lavoro), e garantisce che tali obblighi siano comunicati, applicati e aggiornati nel sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.2",
+    "domanda": "Obiettivi:\r\nL’Organizzazione ha stabilito gli obiettivi relativi alle funzioni e ai livelli pertinenti, considerando pericoli, gli obblighi di conformità, i rischi e le opportunità?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.2",
+    "domanda": "Gli obiettivi pianificati:\r\nSono coerenti con la politica?\r\nSono misurabili?\r\ntengono in considerazione i requisiti applicabili?\r\nSono monitorati?\r\nsono comunicati?\r\nsono aggiornati per quanto appropriato?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.2",
+    "domanda": "L’Organizzazione conserva le informazioni documentate degli obiettivi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "6.2",
+    "domanda": "L’organizzazione:\r\nHa indicato cosa sarà fatto?\r\nSono state definite le risorse?\r\nHa definito il responsabile?\r\nHa definito quando sarà completato?\r\nHa definito come e quando saranno valutati i risultati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "27701",
+    "req": "5.4.2",
+    "domanda": "Sono stati definiti obiettivi specifici per la privacy (es. ridurre gli incidenti)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "27701",
+    "req": "5.4.2",
+    "domanda": "Esiste un piano per raggiungere questi obiettivi, con scadenze e responsabilità?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "39001",
+    "req": "6.3",
+    "domanda": "Fattori di prestazioni RTS\r\nDomanda integrata – Requisito 6.3 ISO 39001:2012 (Fattori di prestazioni RTS)\r\nL’organizzazione ha identificato e utilizza in modo sistematico i fattori di prestazione RTS rilevanti (esposizione, risultato finale e risultato intermedio di sicurezza), in coerenza con il proprio contesto, gli obiettivi e le opportunità individuate?\r\n\r\nIn particolare:\r\n◼ Sono stati identificati i fattori di rischio di esposizione come la distanza percorsa, il volume di traffico e il volume dei prodotti/servizi forniti?\r\n◼ Sono stati identificati e monitorati i fattori di risultato finale di sicurezza (es. numero di morti o feriti gravi)?\r\n◼ Sono stati presi in considerazione i fattori di risultato intermedio di sicurezza (es. progettazione stradale, uso di dispositivi di sicurezza, idoneità psicofisica del conducente, velocità, uso di droghe/alcol, manutenzione veicoli, gestione post-incidente)?\r\n◼ L’organizzazione ha elaborato propri fattori supplementari di prestazione RTS in funzione del proprio ruolo nel sistema del traffico stradale?\r\n◼ I criteri prestazionali identificati sono appropriati e documentati? Sono utilizzati per definire obiettivi e traguardi e per monitorare i progressi dell’organizzazione rispetto alla sicurezza stradale?\r\n◼ È presente una giustificazione tecnica documentata in caso di esclusione o mancata applicazione di uno o più fattori previsti dal requisito?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "39001",
+    "req": "6.4",
+    "domanda": "Obiettivi RTS\r\nL’organizzazione ha definito obiettivi di RTS pertinenti per le proprie funzioni e livelli rilevanti, che risultino:\r\n◼ coerenti con la politica di RTS;\r\n◼ misurabili (ove possibile);\r\n◼ correlati ai requisiti applicabili;\r\n◼ monitorati, comunicati e aggiornati, come appropriato?\r\n\r\nNella definizione o revisione degli obiettivi, l’organizzazione tiene conto dei fattori di rischio, delle opportunità identificate (rif. 6.2), dei fattori prestazionali RTS (rif. 6.3), nonché della propria capacità gestionale, delle opzioni tecnologiche, delle risorse economiche e delle parti interessate?\r\n\r\nPer ciascun obiettivo o traguardo di RTS, l’organizzazione ha definito e documentato:\r\n◼ cosa deve essere fatto;\r\n◼ le risorse necessarie;\r\n◼ i ruoli e le responsabilità;\r\n◼ le tempistiche di completamento;\r\n◼ i criteri per la valutazione dei risultati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "ISO9001",
+    "req": "6.3",
+    "domanda": "PIANIFICAZIONE DEI CAMBIAMENTI\r\nL’organizzazione prende in considerazione lo scopo dei cambiamenti e le loro potenziali conseguenze, l’integrità del SG, la disponibilità delle risorse, l’assegnazione o la riassegnazione delle responsabilità e delle autorità?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "ISO9001",
+    "req": "6.3",
+    "domanda": "L’organizzazione pianifica azioni per il trattamento degli aspetti ambientali significativi, degli obblighi di conformazione, dei rischi e delle opportunità, pianifica la loro integrazione e attuazione nel SG o altri processi, compresa la valutazione della loro efficacia?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "ISO9001",
+    "req": "6.3",
+    "domanda": "L’organizzazione prende in considerazione la pianificazione delle modifiche al SG",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "50001",
+    "req": "6.3",
+    "domanda": "Fattori di prestazione per il sistema di gestione  Analisi Energetica\r\nSono stati valutati Fattori di prestazione per il sistema di gestione l’organizzazione ha condotto e sviluppato Analisi energetica",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "50001",
+    "req": "6.4",
+    "domanda": "Indicatori della prestazione energetica\r\nSono stati determinati gli Indicatori della prestazione energetica (EnPi)\r\nSono disponibili informazioni documentate?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "50001",
+    "req": "6.5",
+    "domanda": "Consumo di riferimento\r\nSono stati stabiliti (1 o più) EnB utilizzando le informazioni ricavate dall’analisi energetica (ISO50001)\r\nSono disponibili informazioni documentate?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "50001",
+    "req": "6.6",
+    "domanda": "Pianificazione della raccolta dati energetici\r\nPianificazione della raccolta dati energetici, l’organizzazione ha assicurato che le caratteristiche chiavi delle sue operazioni che influenzano la prestazione energetica siano identificate, misurate, monitorate ed analizzate ad intervalli pianificati.",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "50001",
+    "req": "6.6",
+    "domanda": "L’organizzazione ha definito e attuato un piano di raccolta dei dati energetici secondo le sue dimensioni?\r\nSono disponibili informazioni documentate?",
+    "esito": ""
+  },
+  {
+    "capitolo": "6. Pianificazione",
+    "standard": "",
+    "req": "Req.",
+    "domanda": "Descrizione",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "39001",
+    "req": "7.1",
+    "domanda": "Coordinamento\r\nL’organizzazione coordina con i pertinenti livelli e funzioni dell’organizzazione e con le parti interessate a ottenere i potenziali benefici, le azioni di RTS da intraprendere. La direzione assicura che vi siano idonee forme di consultazione e coordinamento interne ed esterne per raggiungere gli obiettivi e i traguardi stabiliti di RTS",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.1\r\n7.1.2",
+    "domanda": "Risorse\r\nL'organizzazione determina e fornisce le risorse (per 9001 solo personale) necessarie per l'effettiva attuazione del sistema di gestione per l'operazione e il controllo dei suoi processi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.1",
+    "domanda": "Sono state allocate risorse adeguate per il PIMS (es. budget, personale, strumenti)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.1",
+    "domanda": "Ci sono evidenze di questa allocazione (es. budget approvato)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "9001",
+    "req": "7.1.3",
+    "domanda": "Infrastruttura\r\nL’organizzazione ha determiato l'infrastruttura necessaria (fabbricati e servizi, equipaggiamenti, risorse per trasporto, IT e comunicazioni) per lo sviluppo dei processi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "9001",
+    "req": "7.1.4",
+    "domanda": "Ambiente per il funzionamento dei processi:\r\n\r\nL'organizzazione ha determinato, messo a disposizione e mantiene l'ambiente necessario per il funzionamento dei suoi processi e per conseguire la conformità dei prodotti e servizi?\r\n\r\n-\tsociale (per esempio condizioni non discriminatorie, tranquille, non conflittuali);\r\n-\tpsicologica (per esempio riduzione dello stress, prevenzione del burnout, protezione emotiva);\r\n-\tfisica (per esempio temperatura, calore, umidità, illuminazione, flusso d'aria, igiene, rumore).",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "9001",
+    "req": "7.1.5.1",
+    "domanda": "Sono disponibili risorse di monitoraggio e misurazione idonee per verificare la conformità dei prodotti e dei servizi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "9001",
+    "req": "7.1.5.2",
+    "domanda": "Sono disponibili informazioni documentate relative all’adeguamento delle risorse di monitoraggio e misurazione al loro scopo?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "9001\r\n20000-1",
+    "req": "7.1.6\r\n7.6",
+    "domanda": "Sono disponibili le conoscenze organizzative necessarie per il funzionamento dei processi e la realizzazione della conformità dei prodotti e dei servizi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.2",
+    "domanda": "L'organizzazione ha determinato le competenze necessarie di coloro che possono influenzare le prestazioni e l’efficacia del sistema di gestione e della capacità di soddisfare gli obblighi di adeguamento?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.2",
+    "domanda": "L'organizzazione garantisce che le persone siano competenti sulla base di studi, formazione o esperienza?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.2",
+    "domanda": "L’organizzazione intraprende azioni di acquisto della competenza necessaria (ove applicabile) e valuta l'efficacia delle azioni intraprese?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.2",
+    "domanda": "L'organizzazione garantisce che vengano attribuite responsabilità e autorità?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.2",
+    "domanda": "Sono state nominate responsabilità e autorità per il sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.2",
+    "domanda": "Il personale coinvolto ha le competenze necessarie per gestire la privacy (es. formazione sul GDPR)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.2",
+    "domanda": "È stata pianificata e svolta appropriata formazione? Esistono registri di formazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "37001\r\n37301",
+    "req": "7.2.2",
+    "domanda": "Processo di impiego/Processo di assunzione:\r\nSono stati definiti processi per assicurare che il personale, prima di assumere l’incarico, riceva e comprenda la politica per la prevenzione della corruzione e/o la politica di compliance generale?\r\n\r\nIl personale neoassunto riceve copia della politica di prevenzione della corruzione e/o della politica di compliance, oppure vi ha accesso entro un tempo ragionevole dall'assunzione? Tale ricezione è documentata? È inoltre prevista formazione specifica sulla politica ricevuta?\r\n\r\nVengono identificati i ruoli a rischio di corruzione superiore al livello basso? È previsto un processo strutturato di due diligence prima di assunzione/promozione su tali ruoli?\r\n\r\nLe condizioni di impiego includono esplicitamente l’obbligo di conformità a politiche, procedure e requisiti in materia di compliance e prevenzione della corruzione?\r\n\r\nSono previste procedure disciplinari in caso di violazione delle politiche di compliance o anticorruzione?\r\n\r\nSono presenti salvaguardie per proteggere il personale da ritorsioni in caso di rifiuto a partecipare ad attività sospette o in caso di segnalazioni di corruzione o non conformità?\r\n\r\nEsiste un processo di revisione periodica dei bonus, incentivi e obiettivi di performance per garantire che non inducano comportamenti contrari alla compliance o favoriscano pratiche corruttive?\r\n\r\nI dipendenti in ruoli a rischio elevato sottoscrivono dichiarazioni di impegno alla conformità a cadenze regolari?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.3",
+    "domanda": "L’organizzazione si assicura che le persone che lavorano sotto il suo controllo sono consapevoli in merito alla politica, agli obiettivi, al loro contributo all’efficacia del sistema di gestione e le conseguenze della non conformità ai requisiti del sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.3",
+    "domanda": "Il personale è stato sensibilizzato sui requisiti di privacy e sulle loro responsabilità?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.3",
+    "domanda": "Ci sono evidenze di attività di sensibilizzazione (es. sessioni di formazione)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.4",
+    "domanda": "Sono state determinate le comunicazioni interne ed esterne rilevanti per il sistema di gestione, partecipazione e consulenza? (compreso cosa, quando, con chi, come e chi comunica)",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.4",
+    "domanda": "Sono ritenute informazioni documentate come prova delle comunicazioni?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.4",
+    "domanda": "L'organizzazione mantiene un processo di consultazione e partecipazione dei responsabili delle decisioni a tutti i livelli e per tutte le posizioni?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.4",
+    "domanda": "Esiste un piano di comunicazione per la privacy, sia interna che esterna?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.4",
+    "domanda": "Sono definite procedure per notificare violazioni dei dati (es. entro 72 ore per il GDPR)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "7.5/7.6 (39001)",
+    "domanda": "L'organizzazione assicura che le informazioni documentate richieste dalla norma/norme e quelle necessarie per l’efficace funzionamento del sistema di gestione siano identificate, create, aggiornate, controllate e protette nel tempo, in modo da garantirne l’idoneità, la disponibilità, la riservatezza e l’integrità?\r\n\r\nSpecificamente:\r\nViene determinata l’estensione della documentazione in relazione a fattori come dimensione aziendale, complessità dei processi e competenza delle persone? \r\n\r\nSono state definite modalità per l’identificazione, descrizione, formato, supporto, revisione e approvazione delle informazioni documentate? \r\nLe informazioni documentate sono rese disponibili, aggiornate, idonee all’uso e protette da uso improprio, perdita o accessi non autorizzati?\r\n\r\nL’organizzazione garantisce un controllo efficace tramite attività quali:\r\ngestione della distribuzione e accesso alle informazioni;\r\narchiviazione e leggibilità nel tempo;\r\ncontrollo delle modifiche (es. storicizzazione, versionamento);\r\nconservazione o eliminazione secondo regole stabilite?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.5",
+    "domanda": "Sono disponibili tutte le informazioni documentate richieste (es. registri dei trattamenti, politiche)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "27701",
+    "req": "5.5.5",
+    "domanda": "I documenti sono aggiornati, accessibili e protetti?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "39001",
+    "req": "7.6",
+    "domanda": "È assicurato il controllo delle informazioni documentate (Creazione, aggiornamento, trasmissione, accesso, recupero, uso, deposito, protezione, controllo modifiche, stoccaggio e eliminazione)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "7. Supporto",
+    "standard": "",
+    "req": "Req.",
+    "domanda": "Descrizione",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "",
+    "req": "8",
+    "domanda": "PROCESSO AUDITATO:",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "Comune",
+    "req": "8.1",
+    "domanda": "Descrizione della commessa campionata, descrivi:\r\n- Oggetto;\r\n- Eventuali atti autorizzativi\r\n- Da Acquisizione commessa;\r\n- Stato della commessa;",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.3/8.5.1/8.5.3/8.5.3",
+    "domanda": "Piano di progetto (se applicabile) e controlli della progettazione e sviluppo",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001\r\n14001\r\n45001\r\n39001\r\n37001\r\n37301\r\n20121\r\n50001\r\n27001",
+    "req": "8.1",
+    "domanda": "Piano Qualità; Scadenziari ecc",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37301",
+    "req": "8.2",
+    "domanda": "Definizione di controlli e procedure",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "42001",
+    "req": "8.2",
+    "domanda": "AI risk assessment",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.2",
+    "domanda": "Service delivery",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.2.2",
+    "domanda": "Plan Service",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.2.3",
+    "domanda": "Control of parties involved in the service lifecycle",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.2.4",
+    "domanda": "Service catalogue management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.2.5",
+    "domanda": "Asset Management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.2.6",
+    "domanda": "Configuration management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "50001",
+    "req": "8.2",
+    "domanda": "Progettazione",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "27001",
+    "req": "8.2",
+    "domanda": "Valutazione dei rischi per la sicurezza delle informazioni (Information security risk assessment)",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "27001",
+    "req": "8.3",
+    "domanda": "Trattamento dei rischi per la sicurezza delle informazioni (Information security risk treatment)",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.2.1",
+    "domanda": "Business impact analysis and risk assessment - General",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.2.2",
+    "domanda": "Business impact analysis",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.2.3",
+    "domanda": "Risk assessment",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.3.1",
+    "domanda": "Business continuity strategies and solutions\r\n- General",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.3.2",
+    "domanda": "Identification of strategies and solutions",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.3.3",
+    "domanda": "Selection of strategies and solutions",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.3.4",
+    "domanda": "Resource requirements",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.3.5",
+    "domanda": "Implementation of solutions",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.4.1",
+    "domanda": "Business continuity plans and procedures\r\nGeneral",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.4.2",
+    "domanda": "Response structure",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.4.3",
+    "domanda": "Warning and communication",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.4.4",
+    "domanda": "Business continuity plans",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.4.5",
+    "domanda": "Recovery",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.5",
+    "domanda": "Exercise programme",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "22301",
+    "req": "8.6",
+    "domanda": "Evaluation of business continuity documentation and capabilities",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "42001",
+    "req": "8.2",
+    "domanda": "AI risk assessment",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "42001",
+    "req": "8.3",
+    "domanda": "AI risk treatment",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "42001",
+    "req": "8.4/8.2.2",
+    "domanda": "AI system impact assessment",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.3.1",
+    "domanda": "Relationship and Agreement - General",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.3.2",
+    "domanda": "Business relationship management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.3.3",
+    "domanda": "Service level management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.4.1",
+    "domanda": "Budgeting and accounting for services",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.4.2",
+    "domanda": "Demand management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.4.3",
+    "domanda": "Capacity management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.5.1",
+    "domanda": "Service design and transition",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.5.1",
+    "domanda": "Controlli e processi speciali",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001\r\n50001\r\n20121\r\n20000-1",
+    "req": "8.4/8.3/8.3/8.3.4",
+    "domanda": "Fornitori, Acquisti e Certificazioni dei materiali",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.5.2",
+    "domanda": "Identificazione e rintracciabilità",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.5.3",
+    "domanda": "Proprietà del Cliente",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.5.4",
+    "domanda": "Preservazione",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.5.5",
+    "domanda": "Post-Consegna",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.6",
+    "domanda": "Rilascio",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.6.1",
+    "domanda": "Incident management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.6.2",
+    "domanda": "Service request management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.6.3",
+    "domanda": "Problem management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.7.1",
+    "domanda": "Service availability management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.7.2",
+    "domanda": "Service continuity management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "20000-1",
+    "req": "8.7.3",
+    "domanda": "Information security management",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "9001",
+    "req": "8.7",
+    "domanda": "Gestione output non conformit",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "14001\r\n45001\r\n39001",
+    "req": "8.2",
+    "domanda": "Emergenze",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.2",
+    "domanda": "Due Diligence",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.3",
+    "domanda": "Controlli finanziari",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.4",
+    "domanda": "Controlli non finanziari",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.5",
+    "domanda": "Attuazione dei controlli per la prevenzione della corruzione da parte di organizzazioni controllate e soci in affari",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.6",
+    "domanda": "Impegni per la prevenzione della corruzione",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.7",
+    "domanda": "Regali, ospitalità, donazioni e benefici simili",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001",
+    "req": "8.8",
+    "domanda": "Gestione dell’inadeguatezza dei controlli per la prevenzione della corruzione",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001\r\n37301",
+    "req": "8.9/8.3",
+    "domanda": "Segnalazione di sospetti (whistleblowing)",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative",
+    "standard": "37001\r\n37301",
+    "req": "8.10/8.4",
+    "domanda": "Indagini e gestione di casi di corruzione",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative - PR 2",
+    "standard": "",
+    "req": "8",
+    "domanda": "PROCESSO AUDITATO:",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative - PR 3",
+    "standard": "",
+    "req": "8",
+    "domanda": "PROCESSO AUDITATO:",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative - PR 4",
+    "standard": "",
+    "req": "8",
+    "domanda": "PROCESSO AUDITATO:",
+    "esito": ""
+  },
+  {
+    "capitolo": "8. Att. Operative - PR 5",
+    "standard": "",
+    "req": "8",
+    "domanda": "PROCESSO AUDITATO:",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.1",
+    "domanda": "L’organizzazione misura le prestazioni e l'efficacia del sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.1",
+    "domanda": "L’organizzazione ha determinato che cosa si deve misurare e monitorare, i metodi di monitoraggio, misurazione e valutazione, i criteri della valutazione, la frequenza della misurazione e del monitoraggio e i termini per l’analisi e la valutazione dei risultati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.1",
+    "domanda": "Sono mantenute informazioni documentate in merito ai risultati della misurazione, del monitoraggio, dell’analisi e della valutazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "20121",
+    "req": "9.1",
+    "domanda": "Prestazioni rispetto ai principi fondamentali di sviluppo sostenibile (ISO 20121)",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "9001",
+    "req": "9.1.2",
+    "domanda": "L’organizzazione monitora la percezione dei clienti in merito alla misura in cui sono state adempiute le loro necessità e aspettative?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "9001",
+    "req": "9.1.3",
+    "domanda": "L'organizzazione analizza e valuta i dati e le informazioni appropriate che\r\nemergono dal monitoraggio e dalla misurazione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "",
+    "domanda": "I metodi per analizzare i dati comprendono tecniche statistiche?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "50001\r\n14001\r\n45001",
+    "req": "9.1.2",
+    "domanda": "Valutazione della conformità ai requisiti legislativi e altri requisiti",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "37301",
+    "req": "9.1.2",
+    "domanda": "L’organizzazione ha stabilito e mantiene un processo per raccogliere e analizzare informazioni di ritorno (feedback) da fonti interne ed esterne, al fine di valutare le prestazioni in materia di compliance, identificare eventuali cause di nonconformità e aggiornare il processo di valutazione dei rischi?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "37301",
+    "req": "9.1.3",
+    "domanda": "L’organizzazione ha sviluppato, attuato e mantiene un insieme di indicatori adeguati per valutare il raggiungimento degli obiettivi di compliance e le relative prestazioni?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "37301",
+    "req": "9.1.4",
+    "domanda": "L’organizzazione ha stabilito, attuato e mantiene un processo di reporting relativo alla compliance che garantisce completezza, tempestività e utilizzabilità delle informazioni a supporto delle decisioni?\r\n▢ Sono stati definiti criteri appropriati per il reporting della compliance (es. struttura, contenuti, periodicità, destinatari)?\r\n▢ Sono state stabilite scadenze regolari per il reporting della compliance?\r\n▢ È attuato un sistema di reporting delle eccezioni (ad hoc) in grado di rilevare e comunicare tempestivamente deviazioni o eventi critici?\r\n▢ Sono attivi sistemi/processi che assicurano accuratezza e completezza delle informazioni riportate?\r\n▢ Le informazioni fornite tramite il reporting sono utilizzate dalle funzioni/aree appropriate per l’adozione tempestiva di azioni correttive, preventive o di miglioramento?\r\n I report emessi verso l’organismo di governo o l’alta direzione sono adeguatamente protetti da alterazioni?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "37301",
+    "req": "9.1.5",
+    "domanda": "L’organizzazione conserva registrazioni accurate e aggiornate delle attività di compliance, al fine di supportare il monitoraggio, il riesame e la dimostrazione della conformità al sistema di gestione per la compliance?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.2",
+    "domanda": "Audit Interno\r\nL’organizzazione effettua degli audit interni del sistema di gestione ad intervalli pianificati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.2",
+    "domanda": "La pianificazione degli audit interni tiene presenti i rischi relativi alle attività e ai processi sottoposti ad audit?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.2",
+    "domanda": "Il programma di audit interno include la frequenza, i metodi, le responsabilità, i requisiti di pianificazione e rendicontazione e prende in considerazione l’importanza dei processi, le modifiche che incidono sull’organizzazione e i risultati degli audit precedenti?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "39001",
+    "req": "9.2",
+    "domanda": "Indagini su incidenti (Sinistri) e sugli altri eventi incidentali da traffico stradale (RTS) \r\nL’organizzazione conserva registrazioni accurate e aggiornate delle attività di compliance, in modo da supportare il monitoraggio, il riesame e dimostrare la conformità al sistema di gestione per la compliance?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.3",
+    "domanda": "Riesame della Direzione\r\nIl top management analizza ad intervalli pianificati il sistema di gestione?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.3",
+    "domanda": "I dati di entrata nell’analisi di gestione includono le informazioni richieste dalle norme di riferimento?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.3",
+    "domanda": "Gli elementi di uscita includono le informazioni richieste dalle norme di riferimento?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "9.3",
+    "domanda": "È stato pianificato e svolto il Riesame da parte dell'organo direttivo?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "37001\r\n37301",
+    "req": "9.3.1/9.3.1/9.3.2",
+    "domanda": "L’alta direzione ha effettuato, a intervalli pianificati, il riesame del sistema di gestione per la prevenzione della corruzione, considerando tutti gli elementi richiesti e documentandone i risultati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "37001",
+    "req": "9.4",
+    "domanda": "La funzione di conformità per la prevenzione della corruzione valuta regolarmente se il sistema di gestione è adeguato ed efficace, e riferisce a intervalli pianificati e, se necessario, ad hoc, i risultati di tali valutazioni alla direzione e all’organo direttivo (se presente)?",
+    "esito": ""
+  },
+  {
+    "capitolo": "9. Monitoraggio",
+    "standard": "",
+    "req": "Req.",
+    "domanda": "Descrizione",
+    "esito": ""
+  },
+  {
+    "capitolo": "10. Miglioramento continui",
+    "standard": "",
+    "req": "10.1/10.2/10.3",
+    "domanda": "L’organizzazione migliora continuamente la sua idoneità, adeguamento ed efficacia del sistema di gestione? L’organizzazione ha stabilito e attua un processo per gestire le non conformità, comprese quelle derivanti da reclami, adottando azioni correttive proporzionate agli effetti, riesaminandone le cause e aggiornando il sistema se necessario, e conserva evidenze documentate delle azioni e dei risultati?",
+    "esito": ""
+  },
+  {
+    "capitolo": "10. Miglioramento continui",
+    "standard": "45001",
+    "req": "10.2",
+    "domanda": "Incidenti, non conformità e azioni correttive\r\n L’organizzazione ha stabilito, attuato e mantiene processi per gestire incidenti e non conformità, compresi il reporting, l’investigazione, la determinazione delle cause radice, la valutazione dei rischi, l’adozione di azioni correttive e la verifica dell’efficacia, con il coinvolgimento dei lavoratori e delle parti interessate, e conserva le relative informazioni documentate?",
+    "esito": ""
+  },
+  {
+    "capitolo": "10. Miglioramento continui",
+    "standard": "",
+    "req": "Req.",
+    "domanda": "Descrizione",
+    "esito": ""
+  }
+]
