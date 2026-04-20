@@ -2,11 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { loginRateLimit } from "@/lib/ratelimit";
 import { getClientIp } from "@/lib/get-client-ip";
 
-const COOKIE_NAME = "audit_auth";
+const COOKIE_NAME = "session";
 
 export async function POST(request: NextRequest) {
   try {
-    const ip = getClientIp(request);
+    const ip = getClientIp(request.headers);
 
     const { success, limit, remaining, reset } =
       await loginRateLimit.limit(ip);
@@ -45,23 +45,30 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const password = body.password;
+    const password =
+      typeof body.password === "string" ? body.password.trim() : "";
 
-    if (!process.env.APP_PASSWORD) {
+    const appPassword =
+      typeof process.env.APP_PASSWORD === "string"
+        ? process.env.APP_PASSWORD.trim()
+        : "";
+
+  
+    if (!appPassword) {
       return NextResponse.json(
         { ok: false, error: "Password applicativa non configurata." },
         { status: 500 }
       );
     }
 
-    if (!password || typeof password !== "string") {
+    if (!password) {
       return NextResponse.json(
         { ok: false, error: "Password mancante o non valida." },
         { status: 400 }
       );
     }
 
-    if (password !== process.env.APP_PASSWORD) {
+    if (password !== appPassword) {
       return NextResponse.json(
         { ok: false, error: "Password non corretta." },
         { status: 401 }
@@ -70,12 +77,12 @@ export async function POST(request: NextRequest) {
 
     const response = NextResponse.json({ ok: true });
 
-    response.cookies.set(COOKIE_NAME, "ok", {
+    response.cookies.set(COOKIE_NAME, "true", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",
       path: "/",
-      maxAge: 60 * 60 * 8, // 8 ore
+      maxAge: 60 * 60 * 8,
     });
 
     return response;

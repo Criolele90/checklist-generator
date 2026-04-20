@@ -1,32 +1,26 @@
-import { NextRequest, NextResponse } from "next/server";
-
-const COOKIE_NAME = "audit_auth";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // percorsi pubblici
-  const publicPaths = ["/login", "/api/login", "/logo.png", "/favicon.ico"];
+  const isLoginPage = pathname === "/login";
+  const isProtectedRoute = pathname === "/";
+  const session = request.cookies.get("session")?.value;
 
-  const isPublicPath =
-    publicPaths.includes(pathname) ||
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api/login");
-
-  if (isPublicPath) {
-    return NextResponse.next();
+  // Non autenticato: entra solo nella login
+  if (!session && isProtectedRoute) {
+    return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  const authCookie = request.cookies.get(COOKIE_NAME)?.value;
-
-  if (authCookie === "ok") {
-    return NextResponse.next();
+  // Autenticato: non tornare alla login
+  if (session && isLoginPage) {
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
-  const loginUrl = new URL("/login", request.url);
-  return NextResponse.redirect(loginUrl);
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/", "/login"],
 };
