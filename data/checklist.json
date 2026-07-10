@@ -16,36 +16,22 @@
   {
     "capitolo": "4. Analisi del Contesto",
     "standard": "27701",
-    "req": "5.1",
-    "domanda": "Il PIMS è stato integrato con l’ISMS esistente?",
+    "req": "4.1",
+    "domanda": "L’organizzazione ha determinato se agisce in qualità di titolare del trattamento, contitolare del trattamento o responsabile del trattamento dei dati personali?",
     "esito": ""
   },
   {
     "capitolo": "4. Analisi del Contesto",
     "standard": "27701",
-    "req": "5.1",
-    "domanda": "Esiste un piano documentato per l’implementazione del PIMS?",
+    "req": "4.1",
+    "domanda": "Laddove l'organizzazione agisca in entrambi i ruoli (ovvero come titolare del trattamento dei dati personali e come responsabile del trattamento dei dati personali), sono definiti ruoli distinti, ciascuno dei quali è soggetto a una serie separata di controlli?",
     "esito": ""
   },
   {
     "capitolo": "4. Analisi del Contesto",
     "standard": "27701",
-    "req": "5.2.1",
-    "domanda": "Sono stati identificati i fattori interni ed esterni rilevanti per la privacy (es. normative, rischi)?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.1",
-    "domanda": "Questi fattori sono documentati e aggiornati regolarmente?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "22301",
-    "req": "4.2.2",
-    "domanda": "L’azienda ha individuato i requisiti legali per il BCMS (ISO22301)",
+    "req": "4.2",
+    "domanda": "L'organizzazione include tra le proprie parti interessate quelle che hanno interessi o responsabilità associati al trattamento delle PII, inclusi i titolari delle PII?",
     "esito": ""
   },
   {
@@ -72,43 +58,8 @@
   {
     "capitolo": "4. Analisi del Contesto",
     "standard": "27701",
-    "req": "5.2.2",
-    "domanda": "Comprendere le esigenze e le aspettative delle parti interessate",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.2",
-    "domanda": "Sono state identificate le parti interessate rilevanti (es. titolari dei dati, autorità)?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.2",
-    "domanda": "Le loro esigenze e aspettative in materia di privacy sono documentate?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.3",
-    "domanda": "Determinazione dell’ambito di applicazione del sistema di gestione della sicurezza delle informazioni",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.3",
-    "domanda": "L’ambito del PIMS è stato definito chiaramente e include tutti i processi di trattamento dei dati personali?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.3",
-    "domanda": "L’ambito è documentato e approvato dal management?",
+    "req": "4.3",
+    "domanda": "Nel definire l'ambito di applicazione del PIMS, l'organizzazione include il trattamento dei dati personali?",
     "esito": ""
   },
   {
@@ -130,20 +81,6 @@
     "standard": "",
     "req": "4.4",
     "domanda": "L’organizzazione mantiene e conserva, ove necessario, informazioni documentate per supportare il funzionamento dei propri processi?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.4",
-    "domanda": "È stato istituito un PIMS integrato con l’ISMS?",
-    "esito": ""
-  },
-  {
-    "capitolo": "4. Analisi del Contesto",
-    "standard": "27701",
-    "req": "5.2.4",
-    "domanda": "Il PIMS è operativo e documentato?",
     "esito": ""
   },
   {
@@ -253,20 +190,6 @@
   },
   {
     "capitolo": "5. Leadership",
-    "standard": "27701",
-    "req": "5.3.2",
-    "domanda": "Il top management dimostra impegno per il PIMS (es. partecipazione a riunioni, assegnazione di risorse)?",
-    "esito": ""
-  },
-  {
-    "capitolo": "5. Leadership",
-    "standard": "27701",
-    "req": "5.3.2",
-    "domanda": "Il top management dimostra impegno per il PIMS (es. partecipazione a riunioni, assegnazione di risorse)?",
-    "esito": ""
-  },
-  {
-    "capitolo": "5. Leadership",
     "standard": "",
     "req": "5.2.1",
     "domanda": "Politica del sistema di gestione\r\nStabilire la politica per il sistema di gestione\r\n\r\nL'alta direzione ha stabilito, attuato e mantiene una politica che:\r\na) è appropriata alle finalità e al contesto dell'organizzazione e supporta i suoi indirizzi strategici?\r\nb) costituisce un quadro di riferimento per fissare gli obiettivi?\r\nc) comprende un impegno a soddisfare i requisiti applicabili?\r\nd) comprende un impegno per il miglioramento continuo del sistema di gestione?",
@@ -312,20 +235,6 @@
     "standard": "37301",
     "req": "5.3.4",
     "domanda": "l’organizzazione assicura che tutto il personale sia coinvolto nell’attuazione del sistema di gestione per la compliance, aderendo agli obblighi applicabili, segnalando le problematiche rilevanti e partecipando alle attività di formazione previste?",
-    "esito": ""
-  },
-  {
-    "capitolo": "5. Leadership",
-    "standard": "27701",
-    "req": "5.3.3",
-    "domanda": "Sono stati definiti ruoli e responsabilità per la gestione del PIMS?",
-    "esito": ""
-  },
-  {
-    "capitolo": "5. Leadership",
-    "standard": "27701",
-    "req": "5.3.3",
-    "domanda": "Le autorità sono assegnate in modo chiaro e documentato?",
     "esito": ""
   },
   {
@@ -428,14 +337,14 @@
   },
   {
     "capitolo": "6. Pianificazione",
-    "standard": "27001",
+    "standard": "27001\r\n27701",
     "req": "6.1.2",
-    "domanda": "Valutazione del rischio per la sicurezza delle informazioni\r\nL’organizzazione ha definito e applicato un processo di valutazione dei rischi per la sicurezza delle informazioni che:\r\na) stabilisce e mantiene criteri di rischio per la sicurezza delle informazioni, inclusi:\r\n\r\ni criteri di accettazione del rischio; e i criteri per l’esecuzione delle valutazioni dei rischi per la sicurezza delle informazioni;\r\nb) garantisce che le valutazioni dei rischi ripetute producano risultati coerenti, validi e confrontabili;\r\nc) identifica i rischi per la sicurezza delle informazioni:\r\napplicando il processo di valutazione dei rischi per individuare i rischi legati alla perdita di riservatezza, integrità e disponibilità delle informazioni nel campo di applicazione del sistema di gestione della sicurezza delle informazioni; e\r\nidentificando i proprietari dei rischi;\r\nd) analizza i rischi per la sicurezza delle informazioni:\r\nvalutando le potenziali conseguenze derivanti dal verificarsi dei rischi identificati;\r\nvalutando la probabilità realistica di accadimento dei rischi identificati; e determinando i livelli di rischio;\r\ne) valuta i rischi per la sicurezza delle informazioni:\r\nconfrontando i risultati dell’analisi dei rischi con i criteri di rischio stabiliti; e definendo la priorità dei rischi analizzati ai fini del trattamento del rischio?",
+    "domanda": "Valutazione del rischio per la sicurezza delle informazioni\r\nL’organizzazione ha definito e applicato un processo di valutazione dei rischi per la sicurezza delle informazioni che:\r\na) stabilisce e mantiene criteri di rischio per la sicurezza delle informazioni, inclusi:\r\n\r\ni criteri di accettazione del rischio; e i criteri per l’esecuzione delle valutazioni dei rischi per la sicurezza delle informazioni;\r\nb) garantisce che le valutazioni dei rischi ripetute producano risultati coerenti, validi e confrontabili;\r\nc) identifica i rischi per la sicurezza delle informazioni (e privacy per la 27701):\r\napplicando il processo di valutazione dei rischi per individuare i rischi legati alla perdita di riservatezza, integrità e disponibilità delle informazioni nel campo di applicazione del sistema di gestione della sicurezza delle informazioni; e\r\nidentificando i proprietari dei rischi;\r\nd) analizza i rischi per la sicurezza delle informazioni:\r\nvalutando le potenziali conseguenze derivanti dal verificarsi dei rischi identificati;\r\nvalutando la probabilità realistica di accadimento dei rischi identificati; e determinando i livelli di rischio;\r\ne) valuta i rischi per la sicurezza delle informazioni ( privacy per la 27701):\r\nconfrontando i risultati dell’analisi dei rischi con i criteri di rischio stabiliti; e definendo la priorità dei rischi analizzati ai fini del trattamento del rischio?",
     "esito": ""
   },
   {
     "capitolo": "6. Pianificazione",
-    "standard": "27001",
+    "standard": "27001\r\n27701",
     "req": "6.1.3",
     "domanda": "Trattamento dei rischi per la sicurezza delle informazioni\r\nTrattamento del rischio di sicurezza delle informazioni:\r\nL'organizzazione ha definito e applicato un processo di trattamento del rischio per la sicurezza delle informazioni per:\r\na)\tha scelto le opzioni appropriate per il trattamento del rischio per la sicurezza delle informazioni, tenendo conto dei risultati della valutazione del rischio?\r\nb)\tHa determinato tutti i controlli necessari per implementare le operazioni di trattamento del rischio per la sicurezza delle informazioni scelte?\r\nc)\tHa verificato i controlli determinati al punto 6.1.3 b) con quelli dell'Allegato A e verificato che non siano stati omessi i controlli necessari?\r\n(I controlli di sicurezza delle informazioni elencati nell'Allegato A non sono esaustivi e, se necessario, è possibile includere ulteriori controlli di sicurezza delle informazioni. sicurezza delle informazioni possono essere inclusi, se necessario)\r\nd)\tÈ presente una dichiarazione di applicabilità che contenga:\r\n                   - i controlli necessari (vedere 6.1.3 b) e c));\r\n                   - la giustificazione della loro inclusione/esclusione;\r\n                   - se i controlli necessari sono implementati o meno; e\r\n                   - la giustificazione dell'esclusione di uno qualsiasi dei controlli dell'Allegato A.\r\ne)\tÈ stata formulata un piano di trattamento dei rischi per la sicurezza delle informazioni?\r\nf)\tÈ stato ottenuta l'approvazione del piano di trattamento dei rischi per la sicurezza delle informazioni da parte dei proprietari dei rischi e l'accettazione dei rischi residui per la sicurezza delle informazioni?\r\n\r\nSono conservate informazioni documentate sul processo di trattamento del rischio per la sicurezza delle informazioni.",
     "esito": ""
@@ -443,15 +352,8 @@
   {
     "capitolo": "6. Pianificazione",
     "standard": "27701",
-    "req": "5.4.1",
-    "domanda": "È stata eseguita una valutazione dei rischi legati alla privacy?",
-    "esito": ""
-  },
-  {
-    "capitolo": "6. Pianificazione",
-    "standard": "27701",
-    "req": "5.4.1",
-    "domanda": "Sono state pianificate e implementate azioni per affrontare i rischi e le opportunità?",
+    "req": "6,1,3",
+    "domanda": "L'organizzazione ha identificato e documentato il programma di sicurezza delle informazioni implementato, inclusi gli appropriati controlli di sicurezza, e tale programma affronta almeno i seguenti aspetti?\r\n\r\ngestione dei rischi per la sicurezza delle informazioni;\r\npolitiche per la sicurezza delle informazioni;\r\norganizzazione della sicurezza delle informazioni;\r\nsicurezza delle risorse umane;\r\ngestione degli asset;\r\ncontrollo degli accessi;\r\nsicurezza delle operazioni;\r\ngestione della sicurezza delle reti;\r\nsicurezza nello sviluppo;\r\ngestione dei fornitori;\r\ngestione degli incidenti;\r\ncontinuità della sicurezza delle informazioni;\r\nriesami della sicurezza delle informazioni;\r\ncrittografia e sicurezza fisica e ambientale.",
     "esito": ""
   },
   {
@@ -487,20 +389,6 @@
     "standard": "",
     "req": "6.2",
     "domanda": "L’organizzazione:\r\nHa indicato cosa sarà fatto?\r\nSono state definite le risorse?\r\nHa definito il responsabile?\r\nHa definito quando sarà completato?\r\nHa definito come e quando saranno valutati i risultati?",
-    "esito": ""
-  },
-  {
-    "capitolo": "6. Pianificazione",
-    "standard": "27701",
-    "req": "5.4.2",
-    "domanda": "Sono stati definiti obiettivi specifici per la privacy (es. ridurre gli incidenti)?",
-    "esito": ""
-  },
-  {
-    "capitolo": "6. Pianificazione",
-    "standard": "27701",
-    "req": "5.4.2",
-    "domanda": "Esiste un piano per raggiungere questi obiettivi, con scadenze e responsabilità?",
     "esito": ""
   },
   {
@@ -813,7 +701,7 @@
   },
   {
     "capitolo": "8. Att. Operative",
-    "standard": "9001\r\n14001\r\n45001\r\n39001\r\n37001\r\n37301\r\n20121\r\n50001\r\n27001",
+    "standard": "9001\r\n14001\r\n45001\r\n39001\r\n37001\r\n37301\r\n20121\r\n50001\r\n27001\r\n27701",
     "req": "8.1",
     "domanda": "Piano Qualità; Scadenziari ecc",
     "esito": ""
@@ -883,14 +771,14 @@
   },
   {
     "capitolo": "8. Att. Operative",
-    "standard": "27001",
+    "standard": "27001\r\n27701",
     "req": "8.2",
     "domanda": "Valutazione dei rischi per la sicurezza delle informazioni (Information security risk assessment)",
     "esito": ""
   },
   {
     "capitolo": "8. Att. Operative",
-    "standard": "27001",
+    "standard": "27001\r\n27701",
     "req": "8.3",
     "domanda": "Trattamento dei rischi per la sicurezza delle informazioni (Information security risk treatment)",
     "esito": ""
