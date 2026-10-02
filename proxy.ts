@@ -1,20 +1,28 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { COOKIE_NAME, verifySessionToken } from "@/lib/auth";
 
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const isLoginPage = pathname === "/login";
-  const isProtectedRoute = pathname === "/";
-  const session = request.cookies.get("session")?.value;
+  const isApiRoute = pathname.startsWith("/api/");
+  const session = request.cookies.get(COOKIE_NAME)?.value;
+  const isAuthenticated = await verifySessionToken(session);
 
   // Non autenticato: entra solo nella login
-  if (!session && isProtectedRoute) {
+  if (!isAuthenticated && !isLoginPage) {
+    if (isApiRoute) {
+      return NextResponse.json(
+        { ok: false, error: "Sessione non valida o scaduta." },
+        { status: 401 }
+      );
+    }
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
   // Autenticato: non tornare alla login
-  if (session && isLoginPage) {
+  if (isAuthenticated && isLoginPage) {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
@@ -22,5 +30,11 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/login"],
+  matcher: [
+    "/",
+    "/login",
+    "/gestione-checklist",
+    "/api/checklist/:path*",
+    "/api/logout",
+  ],
 };

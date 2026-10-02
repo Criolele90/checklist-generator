@@ -1,15 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
-import { loginRateLimit } from "@/lib/ratelimit";
+import { limitLogin } from "@/lib/ratelimit";
 import { getClientIp } from "@/lib/get-client-ip";
-
-const COOKIE_NAME = "session";
+import {
+  COOKIE_NAME,
+  createSessionToken,
+  hasValidOrigin,
+  SESSION_DURATION_SECONDS,
+} from "@/lib/auth";
+import { timingSafeEqual } from "node:crypto";
 
 export async function POST(request: NextRequest) {
   try {
+    if (!hasValidOrigin(request)) {
+      return NextResponse.json(
+        { ok: false, error: "Origine della richiesta non valida." },
+        { status: 403 }
+      );
+    }
+
     const ip = getClientIp(request.headers);
 
     const { success, limit, remaining, reset } =
-      await loginRateLimit.limit(ip);
+      await limitLogin(ip);
 
     if (!success) {
       const retryAfter = Math.max(
@@ -68,7 +80,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (password !== appPassword) {
+    const suppliedPassword = Buffer.from(password);
+    const expectedPassword = Buffer.from(appPassword);
+    const passwordMatches =
+      suppliedPassword.length === expectedPassword.length &&
+      timingSafeEqual(suppliedPassword, expectedPassword);
+
+    if (!passwordMatches) {
       return NextResponse.json(
         { ok: false, error: "Password non corretta." },
         { status: 401 }
@@ -77,12 +95,12 @@ export async function POST(request: NextRequest) {
 
     const response = NextResponse.json({ ok: true });
 
-    response.cookies.set(COOKIE_NAME, "true", {
+    response.cookies.set(COOKIE_NAME, await createSessionToken(), {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",
       path: "/",
-      maxAge: 60 * 60 * 8,
+      maxAge: SESSION_DURATION_SECONDS,
     });
 
     return response;

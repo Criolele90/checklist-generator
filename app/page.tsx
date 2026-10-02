@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import righeChecklist from "@/data/checklist.json";
 import {
   AlignmentType,
@@ -105,7 +106,32 @@ export default function Home() {
     { nome: "", ruolo: "Lead Auditor" },
   ]);
 
-  const righe = righeChecklist as RigaChecklist[];
+  const [righe, setRighe] = useState<RigaChecklist[]>(
+    righeChecklist as RigaChecklist[]
+  );
+
+  useEffect(() => {
+    let active = true;
+
+    async function loadLatestChecklist() {
+      try {
+        const response = await fetch("/api/checklist", { cache: "no-store" });
+        if (!response.ok) return;
+
+        const data = await response.json();
+        if (active && Array.isArray(data.rows) && data.rows.length > 0) {
+          setRighe(data.rows);
+        }
+      } catch {
+        // La checklist inclusa nel deploy rimane disponibile come fallback.
+      }
+    }
+
+    void loadLatestChecklist();
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const tutteLeNorme = useMemo(() => {
     const insieme = new Set<string>();
@@ -1040,6 +1066,23 @@ export default function Home() {
               coerente con il sistema documentale aziendale.
             </p>
           </div>
+
+          <Link
+            href="/gestione-checklist"
+            style={{
+              marginLeft: "auto",
+              flexShrink: 0,
+              padding: "11px 15px",
+              border: "1px solid rgba(255,255,255,0.35)",
+              borderRadius: 9,
+              color: COLORI.bianco,
+              textDecoration: "none",
+              fontSize: 14,
+              fontWeight: 700,
+            }}
+          >
+            Gestisci checklist
+          </Link>
         </div>
       </section>
 
