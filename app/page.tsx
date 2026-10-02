@@ -54,6 +54,14 @@ type MembroTeam = {
   ruolo: string;
 };
 
+const REVISIONE_PREDEFINITA = "08";
+const DATA_REVISIONE_PREDEFINITA = "2022-11-21";
+
+function formattaDataRevisione(value: string): string {
+  const [anno, mese, giorno] = value.split("-");
+  return anno && mese && giorno ? `${giorno}/${mese}/${anno}` : value;
+}
+
 function normalizzaStandard(valore: string): string {
   if (!valore) return "";
 
@@ -109,6 +117,10 @@ export default function Home() {
   const [righe, setRighe] = useState<RigaChecklist[]>(
     righeChecklist as RigaChecklist[]
   );
+  const [revisione, setRevisione] = useState(REVISIONE_PREDEFINITA);
+  const [dataRevisione, setDataRevisione] = useState(
+    DATA_REVISIONE_PREDEFINITA
+  );
 
   useEffect(() => {
     let active = true;
@@ -121,6 +133,12 @@ export default function Home() {
         const data = await response.json();
         if (active && Array.isArray(data.rows) && data.rows.length > 0) {
           setRighe(data.rows);
+          if (typeof data.metadata?.revision === "string") {
+            setRevisione(data.metadata.revision);
+          }
+          if (typeof data.metadata?.revisionDate === "string") {
+            setDataRevisione(data.metadata.revisionDate);
+          }
         }
       } catch {
         // La checklist inclusa nel deploy rimane disponibile come fallback.
@@ -349,6 +367,66 @@ export default function Home() {
     });
   }
 
+  function creaTabellaChiusuraRilieviWord() {
+    return new Table({
+      width: {
+        size: 100,
+        type: WidthType.PERCENTAGE,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.SINGLE,
+          size: 1,
+          color: COLORI.bordoWord,
+        },
+        bottom: {
+          style: BorderStyle.SINGLE,
+          size: 1,
+          color: COLORI.bordoWord,
+        },
+        left: {
+          style: BorderStyle.SINGLE,
+          size: 1,
+          color: COLORI.bordoWord,
+        },
+        right: {
+          style: BorderStyle.SINGLE,
+          size: 1,
+          color: COLORI.bordoWord,
+        },
+        insideHorizontal: {
+          style: BorderStyle.SINGLE,
+          size: 1,
+          color: COLORI.bordoWord,
+        },
+        insideVertical: {
+          style: BorderStyle.SINGLE,
+          size: 1,
+          color: COLORI.bordoWord,
+        },
+      },
+      rows: [
+        new TableRow({
+          children: [
+            creaCellaHeaderWord("N.", 10),
+            creaCellaHeaderWord("Evidenza di chiusura", 60),
+            creaCellaHeaderWord("Classificazione", 30),
+          ],
+        }),
+        ...Array.from({ length: 3 }).map(
+          () =>
+            new TableRow({
+              children: [
+                creaCellaValoreWord("", 10),
+                creaCellaValoreWord("", 60),
+                creaCellaValoreWord("", 30),
+              ],
+            })
+        ),
+      ],
+    });
+  }
+
   async function generaWord() {
     const intestazioneTabella = new Table({
       width: {
@@ -426,7 +504,7 @@ export default function Home() {
                   spacing: { after: 40 },
                   children: [
                     new TextRun({
-                      text: "REV 08",
+                      text: `REV ${revisione}`,
                       bold: true,
                       size: 18,
                     }),
@@ -435,7 +513,7 @@ export default function Home() {
                 new Paragraph({
                   children: [
                     new TextRun({
-                      text: "21/11/2022",
+                      text: formattaDataRevisione(dataRevisione),
                       bold: true,
                       size: 18,
                     }),
@@ -706,7 +784,28 @@ export default function Home() {
         ];
       });
 
+      const sezioneChiusuraRilievi =
+        capitolo === "4. Analisi del Contesto"
+          ? [
+              new Paragraph({
+                spacing: { before: 320, after: 180 },
+                children: [
+                  new TextRun({
+                    text: "Chiusura dei rilievi",
+                    bold: true,
+                    size: 32,
+                    color: "0E2841",
+                  }),
+                ],
+              }),
+              new Paragraph(""),
+              creaTabellaChiusuraRilieviWord(),
+              new Paragraph(""),
+            ]
+          : [];
+
       return [
+        ...sezioneChiusuraRilievi,
         new Paragraph({
           spacing: { before: 320, after: 180 },
           children: [

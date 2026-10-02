@@ -6,6 +6,8 @@ import type { ChecklistRow } from "@/lib/checklist";
 
 const CHECKLIST_KEY = "checklist:current:v1";
 const FALLBACK_FILENAME = "FORM 01-06 EVIDENZE DI AUDIT.xlsm";
+export const DEFAULT_REVISION = "08";
+export const DEFAULT_REVISION_DATE = "2022-11-21";
 
 export type StoredChecklist = {
   filename: string;
@@ -14,6 +16,8 @@ export type StoredChecklist = {
   rows: ChecklistRow[];
   uploadedAt: string;
   size: number;
+  revision: string;
+  revisionDate: string;
 };
 
 function getRedis(): Redis | null {
@@ -29,7 +33,15 @@ function getRedis(): Redis | null {
 
 export async function getUploadedChecklist(): Promise<StoredChecklist | null> {
   const redis = getRedis();
-  return redis ? redis.get<StoredChecklist>(CHECKLIST_KEY) : null;
+  const checklist = redis ? await redis.get<StoredChecklist>(CHECKLIST_KEY) : null;
+
+  if (!checklist) return null;
+
+  return {
+    ...checklist,
+    revision: checklist.revision || DEFAULT_REVISION,
+    revisionDate: checklist.revisionDate || DEFAULT_REVISION_DATE,
+  };
 }
 
 export async function saveChecklist(checklist: StoredChecklist): Promise<void> {
@@ -49,6 +61,8 @@ export async function getFallbackChecklist(): Promise<StoredChecklist> {
     rows: fallbackRows as ChecklistRow[],
     uploadedAt: fileInfo.mtime.toISOString(),
     size: fileInfo.size,
+    revision: DEFAULT_REVISION,
+    revisionDate: DEFAULT_REVISION_DATE,
   };
 }
 

@@ -11,6 +11,8 @@ type ChecklistMetadata = {
   uploadedAt: string;
   size: number;
   rowCount: number;
+  revision: string;
+  revisionDate: string;
 };
 
 function formatBytes(bytes: number): string {
@@ -26,11 +28,19 @@ function formatDate(value: string): string {
   }).format(new Date(value));
 }
 
+function formatDateOnly(value: string): string {
+  const [year, month, day] = value.split("-");
+  return year && month && day ? `${day}/${month}/${year}` : value;
+}
+
 export default function ChecklistManagementPage() {
   const [metadata, setMetadata] = useState<ChecklistMetadata | null>(null);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
+  const [savingVersion, setSavingVersion] = useState(false);
+  const [revision, setRevision] = useState("");
+  const [revisionDate, setRevisionDate] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -48,7 +58,11 @@ export default function ChecklistManagementPage() {
           throw new Error(data.error || "Impossibile leggere la checklist corrente.");
         }
 
-        if (active) setMetadata(data.metadata);
+        if (active) {
+          setMetadata(data.metadata);
+          setRevision(data.metadata.revision);
+          setRevisionDate(data.metadata.revisionDate);
+        }
       } catch (loadError) {
         if (active) {
           setError(
@@ -96,6 +110,8 @@ export default function ChecklistManagementPage() {
       }
 
       setMetadata(data.metadata);
+      setRevision(data.metadata.revision);
+      setRevisionDate(data.metadata.revisionDate);
       setSelectedFile(null);
       if (inputRef.current) inputRef.current.value = "";
       setSuccess(
@@ -107,6 +123,43 @@ export default function ChecklistManagementPage() {
       );
     } finally {
       setUploading(false);
+    }
+  }
+
+  async function handleVersionSave(event: React.FormEvent) {
+    event.preventDefault();
+    setSavingVersion(true);
+    setError("");
+    setSuccess("");
+
+    try {
+      const response = await fetch("/api/checklist", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ revision, revisionDate }),
+      });
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Aggiornamento del versionamento non riuscito.");
+      }
+
+      setMetadata(data.metadata);
+      setRevision(data.metadata.revision);
+      setRevisionDate(data.metadata.revisionDate);
+      setSuccess(
+        `Versionamento aggiornato: REV ${data.metadata.revision} del ${formatDateOnly(
+          data.metadata.revisionDate
+        )}.`
+      );
+    } catch (versionError) {
+      setError(
+        versionError instanceof Error
+          ? versionError.message
+          : "Aggiornamento del versionamento non riuscito."
+      );
+    } finally {
+      setSavingVersion(false);
     }
   }
 
@@ -146,7 +199,7 @@ export default function ChecklistManagementPage() {
           <h1>Gestione checklist Excel</h1>
           <p>
             Scarica la versione attualmente in uso oppure sostituiscila con un nuovo
-            file. Dopo il caricamento, il generatore userà subito i dati aggiornati.
+            file. Puoi anche aggiornare revisione e data riportate nel documento Word.
           </p>
         </div>
 
@@ -176,6 +229,10 @@ export default function ChecklistManagementPage() {
                 <div>
                   <dt>Contenuto</dt>
                   <dd>{metadata.rowCount} righe · {formatBytes(metadata.size)}</dd>
+                </div>
+                <div>
+                  <dt>Versionamento</dt>
+                  <dd>REV {metadata.revision} · {formatDateOnly(metadata.revisionDate)}</dd>
                 </div>
               </dl>
             ) : null}
@@ -236,15 +293,74 @@ export default function ChecklistManagementPage() {
           </section>
         </div>
 
+        <section className={`${styles.card} ${styles.versionCard}`}>
+          <div className={styles.versionIntro}>
+            <div>
+              <span className={styles.step}>VERSIONAMENTO DOCUMENTO</span>
+              <h2>Revisione della checklist generata</h2>
+              <p>
+                Questi valori verranno riportati automaticamente nell’intestazione
+                della checklist Word.
+              </p>
+            </div>
+            <div className={styles.versionPreview} aria-label="Anteprima versionamento">
+              <strong>FORM 01-09</strong>
+              <strong>REV {revision || "—"}</strong>
+              <strong>{revisionDate ? formatDateOnly(revisionDate) : "—"}</strong>
+            </div>
+          </div>
+
+          <form className={styles.versionForm} onSubmit={handleVersionSave}>
+            <label>
+              <span>Rev</span>
+              <input
+                type="text"
+                value={revision}
+                onChange={(event) => setRevision(event.target.value)}
+                placeholder="Es. 09"
+                maxLength={30}
+                required
+              />
+              <small>Inserisci solo il valore, senza scrivere “REV”.</small>
+            </label>
+
+            <label>
+              <span>Data</span>
+              <input
+                type="date"
+                value={revisionDate}
+                onChange={(event) => setRevisionDate(event.target.value)}
+                required
+              />
+              <small>Data di emissione della revisione.</small>
+            </label>
+
+            <button
+              className={styles.primaryButton}
+              type="submit"
+              disabled={
+                loading ||
+                savingVersion ||
+                !revision.trim() ||
+                !revisionDate ||
+                (metadata?.revision === revision.trim().replace(/^rev\s*/i, "") &&
+                  metadata?.revisionDate === revisionDate)
+              }
+            >
+              {savingVersion ? "Salvataggio…" : "Salva versionamento"}
+            </button>
+          </form>
+        </section>
+
         {error ? <div className={styles.error} role="alert">{error}</div> : null}
         {success ? <div className={styles.success} role="status">{success}</div> : null}
 
         <aside className={styles.notice}>
           <span aria-hidden="true">i</span>
           <p>
-            <strong>Aggiornamento immediato.</strong> Dopo il caricamento puoi tornare
-            al generatore: standard, domande e requisiti saranno letti dalla nuova
-            checklist senza dover pubblicare nuovamente il sito.
+            <strong>Aggiornamento immediato.</strong> Dopo il salvataggio puoi tornare
+            al generatore: contenuti, revisione e data saranno letti dai dati aggiornati
+            senza dover pubblicare nuovamente il sito.
           </p>
         </aside>
       </section>

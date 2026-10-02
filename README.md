@@ -11,6 +11,7 @@ senza dover modificare o pubblicare nuovamente il codice.
 - generazione della checklist Word a partire dagli standard selezionati;
 - area riservata `/gestione-checklist` per scaricare il file Excel corrente;
 - caricamento di file `.xlsx` e `.xlsm`, validazione e aggiornamento immediato;
+- gestione di revisione e data riportate nell'intestazione del documento Word;
 - checklist salvata in Redis Upstash, quindi persistente anche dopo un nuovo deploy;
 - rate limiting sui tentativi di accesso.
 

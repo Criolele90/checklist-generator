@@ -127,6 +127,83 @@
   gap: 22px;
 }
 
+.versionCard {
+  margin-top: 22px;
+}
+
+.versionIntro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.versionIntro h2 {
+  margin: 7px 0 8px;
+  color: #0e2841;
+  font-size: 24px;
+}
+
+.versionIntro p {
+  margin: 0;
+  color: #647b89;
+  line-height: 1.5;
+}
+
+.versionPreview {
+  flex: 0 0 180px;
+  padding: 14px 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #0e2841;
+  border: 1px solid #9db3c0;
+  background: #fbfdfe;
+  font-size: 13px;
+}
+
+.versionForm {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(220px, 1fr) minmax(210px, 0.8fr);
+  gap: 18px;
+  align-items: end;
+}
+
+.versionForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.versionForm label > span {
+  color: #294c61;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.versionForm input {
+  min-height: 48px;
+  padding: 0 13px;
+  color: #17364b;
+  border: 1px solid #bcd0dc;
+  border-radius: 9px;
+  background: #fbfdfe;
+  font: inherit;
+  outline: none;
+}
+
+.versionForm input:focus {
+  border-color: #156082;
+  box-shadow: 0 0 0 3px rgba(21, 96, 130, 0.12);
+}
+
+.versionForm small {
+  min-height: 18px;
+  color: #718694;
+  font-size: 12px;
+}
+
 .card {
   position: relative;
   background: white;
@@ -373,6 +450,19 @@
   }
 
   .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .versionIntro {
+    flex-direction: column;
+  }
+
+  .versionPreview {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .versionForm {
     grid-template-columns: 1fr;
   }
 }

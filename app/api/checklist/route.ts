@@ -34,6 +34,8 @@ export async function GET(request: NextRequest) {
         uploadedAt: checklist.uploadedAt,
         size: checklist.size,
         rowCount: checklist.rows.length,
+        revision: checklist.revision,
+        revisionDate: checklist.revisionDate,
       },
     },
     { headers: { "Cache-Control": "no-store" } }
@@ -97,6 +99,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const currentChecklist = await getCurrentChecklist();
     const storedChecklist = {
       filename: file.name,
       contentType: file.name.toLowerCase().endsWith(".xlsm")
@@ -106,6 +109,8 @@ export async function POST(request: NextRequest) {
       rows,
       uploadedAt: new Date().toISOString(),
       size: file.size,
+      revision: currentChecklist.revision,
+      revisionDate: currentChecklist.revisionDate,
     };
 
     await saveChecklist(storedChecklist);
@@ -117,6 +122,8 @@ export async function POST(request: NextRequest) {
         uploadedAt: storedChecklist.uploadedAt,
         size: storedChecklist.size,
         rowCount: storedChecklist.rows.length,
+        revision: storedChecklist.revision,
+        revisionDate: storedChecklist.revisionDate,
       },
     });
   } catch (error) {
@@ -137,6 +144,83 @@ export async function POST(request: NextRequest) {
         ok: false,
         error: "Impossibile elaborare o salvare il file. Verifica il formato e riprova.",
       },
+      { status: 500 }
+    );
+  }
+}
+
+export async function PATCH(request: NextRequest) {
+  const isAdmin = await verifyAdminSessionToken(
+    request.cookies.get(ADMIN_COOKIE_NAME)?.value
+  );
+
+  if (!isAdmin) {
+    return NextResponse.json(
+      { ok: false, error: "Autorizzazione amministratore richiesta." },
+      { status: 403 }
+    );
+  }
+
+  if (!hasValidOrigin(request)) {
+    return NextResponse.json(
+      { ok: false, error: "Origine della richiesta non valida." },
+      { status: 403 }
+    );
+  }
+
+  try {
+    const body = await request.json();
+    const revision =
+      typeof body.revision === "string"
+        ? body.revision.trim().replace(/^rev\s*/i, "")
+        : "";
+    const revisionDate =
+      typeof body.revisionDate === "string" ? body.revisionDate.trim() : "";
+
+    if (!revision || revision.length > 30) {
+      return NextResponse.json(
+        { ok: false, error: "Inserisci una revisione valida (massimo 30 caratteri)." },
+        { status: 400 }
+      );
+    }
+
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(revisionDate)) {
+      return NextResponse.json(
+        { ok: false, error: "Inserisci una data di revisione valida." },
+        { status: 400 }
+      );
+    }
+
+    const checklist = await getCurrentChecklist();
+    const updatedChecklist = { ...checklist, revision, revisionDate };
+    await saveChecklist(updatedChecklist);
+
+    return NextResponse.json({
+      ok: true,
+      metadata: {
+        filename: updatedChecklist.filename,
+        uploadedAt: updatedChecklist.uploadedAt,
+        size: updatedChecklist.size,
+        rowCount: updatedChecklist.rows.length,
+        revision: updatedChecklist.revision,
+        revisionDate: updatedChecklist.revisionDate,
+      },
+    });
+  } catch (error) {
+    console.error("Errore durante l’aggiornamento del versionamento:", error);
+
+    if (error instanceof Error && error.message.includes("Storage Redis")) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error: "Archivio non configurato. Verifica le variabili Redis dell’ambiente.",
+        },
+        { status: 503 }
+      );
+    }
+
+    return NextResponse.json(
+      { ok: false, error: "Impossibile aggiornare il versionamento." },
       { status: 500 }
     );
   }
