@@ -524,6 +524,10 @@ export default function Home() {
       const gruppiPerRequisito: Record<string, RigaChecklist[]> = {};
 
       righeDelCapitolo.forEach((riga) => {
+        if (!riga.req.trim()) {
+          return;
+        }
+
         if (!gruppiPerRequisito[riga.req]) {
           gruppiPerRequisito[riga.req] = [];
         }
