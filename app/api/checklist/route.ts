@@ -1,5 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import { COOKIE_NAME, hasValidOrigin, verifySessionToken } from "@/lib/auth";
+import {
+  ADMIN_COOKIE_NAME,
+  COOKIE_NAME,
+  hasValidOrigin,
+  verifyAdminSessionToken,
+  verifySessionToken,
+} from "@/lib/auth";
 import { parseChecklist } from "@/lib/checklist";
 import { getCurrentChecklist, saveChecklist } from "@/lib/checklist-storage";
 
@@ -35,8 +41,15 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  if (!(await isAuthenticated(request))) {
-    return NextResponse.json({ ok: false, error: "Non autorizzato." }, { status: 401 });
+  const isAdmin = await verifyAdminSessionToken(
+    request.cookies.get(ADMIN_COOKIE_NAME)?.value
+  );
+
+  if (!isAdmin) {
+    return NextResponse.json(
+      { ok: false, error: "Autorizzazione amministratore richiesta." },
+      { status: 403 }
+    );
   }
 
   if (!hasValidOrigin(request)) {

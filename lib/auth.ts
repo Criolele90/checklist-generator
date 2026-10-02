@@ -1,4 +1,5 @@
 const COOKIE_NAME = "session";
+const ADMIN_COOKIE_NAME = "admin_session";
 const SESSION_DURATION_SECONDS = 60 * 60 * 8;
 
 function getSessionSecret(): string {
@@ -47,17 +48,23 @@ function constantTimeEqual(left: string, right: string): boolean {
   return difference === 0;
 }
 
-export async function createSessionToken(): Promise<string> {
+async function createScopedSessionToken(scope: "app" | "admin"): Promise<string> {
   const expiresAt = Math.floor(Date.now() / 1000) + SESSION_DURATION_SECONDS;
-  const payload = String(expiresAt);
+  const payload = `${scope}:${expiresAt}`;
   return `${payload}.${await sign(payload)}`;
 }
 
-export async function verifySessionToken(token?: string): Promise<boolean> {
+async function verifyScopedSessionToken(
+  token: string | undefined,
+  expectedScope: "app" | "admin"
+): Promise<boolean> {
   if (!token) return false;
 
-  const [expiresAtRaw, suppliedSignature, extra] = token.split(".");
-  if (!expiresAtRaw || !suppliedSignature || extra) return false;
+  const [payload, suppliedSignature, extra] = token.split(".");
+  if (!payload || !suppliedSignature || extra) return false;
+
+  const [scope, expiresAtRaw, payloadExtra] = payload.split(":");
+  if (scope !== expectedScope || !expiresAtRaw || payloadExtra) return false;
 
   const expiresAt = Number(expiresAtRaw);
   if (!Number.isSafeInteger(expiresAt) || expiresAt <= Math.floor(Date.now() / 1000)) {
@@ -65,11 +72,27 @@ export async function verifySessionToken(token?: string): Promise<boolean> {
   }
 
   try {
-    const expectedSignature = await sign(expiresAtRaw);
+    const expectedSignature = await sign(payload);
     return constantTimeEqual(suppliedSignature, expectedSignature);
   } catch {
     return false;
   }
+}
+
+export function createSessionToken(): Promise<string> {
+  return createScopedSessionToken("app");
+}
+
+export function createAdminSessionToken(): Promise<string> {
+  return createScopedSessionToken("admin");
+}
+
+export function verifySessionToken(token?: string): Promise<boolean> {
+  return verifyScopedSessionToken(token, "app");
+}
+
+export function verifyAdminSessionToken(token?: string): Promise<boolean> {
+  return verifyScopedSessionToken(token, "admin");
 }
 
 export function hasValidOrigin(request: Request): boolean {
@@ -86,4 +109,4 @@ export function hasValidOrigin(request: Request): boolean {
   }
 }
 
-export { COOKIE_NAME, SESSION_DURATION_SECONDS };
+export { ADMIN_COOKIE_NAME, COOKIE_NAME, SESSION_DURATION_SECONDS };

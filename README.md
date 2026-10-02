@@ -5,7 +5,9 @@ senza dover modificare o pubblicare nuovamente il codice.
 
 ## Funzioni principali
 
-- accesso protetto da password con sessione firmata e scadenza dopo 8 ore;
+- accesso all'applicativo protetto da `APP_PASSWORD`;
+- area checklist protetta separatamente da `ADMIN_PASSWORD`;
+- sessioni firmate con scadenza dopo 8 ore;
 - generazione della checklist Word a partire dagli standard selezionati;
 - area riservata `/gestione-checklist` per scaricare il file Excel corrente;
 - caricamento di file `.xlsx` e `.xlsm`, validazione e aggiornamento immediato;
@@ -17,6 +19,7 @@ senza dover modificare o pubblicare nuovamente il codice.
 Copia `.env.example` in `.env.local` e configura:
 
 - `APP_PASSWORD`: password di accesso;
+- `ADMIN_PASSWORD`: password distinta richiesta per scaricare o sostituire la checklist;
 - `APP_SESSION_SECRET`: segreto casuale usato per firmare le sessioni. È consigliato
   impostarlo separatamente dalla password;
 - `UPSTASH_REDIS_REST_URL` e `UPSTASH_REDIS_REST_TOKEN`: credenziali Redis usate

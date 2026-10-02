@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { COOKIE_NAME, hasValidOrigin } from "@/lib/auth";
+import { ADMIN_COOKIE_NAME, COOKIE_NAME, hasValidOrigin } from "@/lib/auth";
 
 export async function POST(request: NextRequest) {
   if (!hasValidOrigin(request)) {
@@ -11,6 +11,13 @@ export async function POST(request: NextRequest) {
 
   const response = NextResponse.json({ ok: true });
   response.cookies.set(COOKIE_NAME, "", {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/",
+    maxAge: 0,
+  });
+  response.cookies.set(ADMIN_COOKIE_NAME, "", {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",

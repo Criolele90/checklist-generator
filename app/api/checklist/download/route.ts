@@ -1,16 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
-import { COOKIE_NAME, verifySessionToken } from "@/lib/auth";
+import { ADMIN_COOKIE_NAME, verifyAdminSessionToken } from "@/lib/auth";
 import { getCurrentChecklist } from "@/lib/checklist-storage";
 
 export const runtime = "nodejs";
 
 export async function GET(request: NextRequest) {
-  const authenticated = await verifySessionToken(
-    request.cookies.get(COOKIE_NAME)?.value
+  const authenticated = await verifyAdminSessionToken(
+    request.cookies.get(ADMIN_COOKIE_NAME)?.value
   );
 
   if (!authenticated) {
-    return NextResponse.json({ ok: false, error: "Non autorizzato." }, { status: 401 });
+    return NextResponse.json(
+      { ok: false, error: "Autorizzazione amministratore richiesta." },
+      { status: 403 }
+    );
   }
 
   const checklist = await getCurrentChecklist();

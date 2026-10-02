@@ -1,0 +1,134 @@
+.page {
+  min-height: 100vh;
+  padding: 32px 18px;
+  display: grid;
+  place-items: center;
+  color: #17364b;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(106, 190, 226, 0.24), transparent 28rem),
+    linear-gradient(145deg, #eef7fb, #f8fafc);
+}
+
+.panel {
+  width: min(100%, 470px);
+  padding: 36px;
+  border: 1px solid #d4e4ec;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 24px 70px rgba(14, 40, 65, 0.13);
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 26px;
+  color: #4e6b7b;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 22px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #dce9ef;
+  border-radius: 17px;
+  background: #f8fcfe;
+}
+
+.eyebrow {
+  color: #156082;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.panel h1 {
+  margin: 8px 0 10px;
+  color: #0e2841;
+  font-size: 34px;
+  letter-spacing: -0.03em;
+}
+
+.panel > p {
+  margin: 0 0 26px;
+  color: #5c7281;
+  line-height: 1.55;
+}
+
+.panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.panel label {
+  color: #294c61;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.panel input {
+  min-height: 50px;
+  padding: 0 14px;
+  color: #17364b;
+  border: 1px solid #bcd0dc;
+  border-radius: 10px;
+  background: #fbfdfe;
+  font: inherit;
+  outline: none;
+}
+
+.panel input:focus {
+  border-color: #156082;
+  box-shadow: 0 0 0 3px rgba(21, 96, 130, 0.13);
+}
+
+.panel button {
+  min-height: 50px;
+  margin-top: 7px;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  background: #156082;
+  box-shadow: 0 8px 20px rgba(21, 96, 130, 0.22);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.panel button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.error {
+  margin-top: 16px;
+  padding: 12px 14px;
+  color: #9d281f;
+  border: 1px solid #efc2bd;
+  border-radius: 9px;
+  background: #fff0ee;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.panel small {
+  display: block;
+  margin-top: 20px;
+  color: #718694;
+  line-height: 1.45;
+}
+
+@media (max-width: 480px) {
+  .panel {
+    padding: 26px 22px;
+  }
+
+  .panel h1 {
+    font-size: 29px;
+  }
+}
