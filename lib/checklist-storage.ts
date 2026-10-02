@@ -8,6 +8,7 @@ const CHECKLIST_KEY = "checklist:current:v1";
 const FALLBACK_FILENAME = "FORM 01-06 EVIDENZE DI AUDIT.xlsm";
 export const DEFAULT_REVISION = "08";
 export const DEFAULT_REVISION_DATE = "2022-11-21";
+export const DEFAULT_EDITION = "01";
 
 export type StoredChecklist = {
   filename: string;
@@ -16,6 +17,7 @@ export type StoredChecklist = {
   rows: ChecklistRow[];
   uploadedAt: string;
   size: number;
+  edition: string;
   revision: string;
   revisionDate: string;
 };
@@ -39,6 +41,7 @@ export async function getUploadedChecklist(): Promise<StoredChecklist | null> {
 
   return {
     ...checklist,
+    edition: checklist.edition || DEFAULT_EDITION,
     revision: checklist.revision || DEFAULT_REVISION,
     revisionDate: checklist.revisionDate || DEFAULT_REVISION_DATE,
   };
@@ -61,6 +64,7 @@ export async function getFallbackChecklist(): Promise<StoredChecklist> {
     rows: fallbackRows as ChecklistRow[],
     uploadedAt: fileInfo.mtime.toISOString(),
     size: fileInfo.size,
+    edition: DEFAULT_EDITION,
     revision: DEFAULT_REVISION,
     revisionDate: DEFAULT_REVISION_DATE,
   };

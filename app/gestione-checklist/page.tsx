@@ -11,6 +11,7 @@ type ChecklistMetadata = {
   uploadedAt: string;
   size: number;
   rowCount: number;
+  edition: string;
   revision: string;
   revisionDate: string;
 };
@@ -39,6 +40,7 @@ export default function ChecklistManagementPage() {
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
   const [savingVersion, setSavingVersion] = useState(false);
+  const [edition, setEdition] = useState("");
   const [revision, setRevision] = useState("");
   const [revisionDate, setRevisionDate] = useState("");
   const [error, setError] = useState("");
@@ -60,6 +62,7 @@ export default function ChecklistManagementPage() {
 
         if (active) {
           setMetadata(data.metadata);
+          setEdition(data.metadata.edition);
           setRevision(data.metadata.revision);
           setRevisionDate(data.metadata.revisionDate);
         }
@@ -110,6 +113,7 @@ export default function ChecklistManagementPage() {
       }
 
       setMetadata(data.metadata);
+      setEdition(data.metadata.edition);
       setRevision(data.metadata.revision);
       setRevisionDate(data.metadata.revisionDate);
       setSelectedFile(null);
@@ -136,7 +140,7 @@ export default function ChecklistManagementPage() {
       const response = await fetch("/api/checklist", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ revision, revisionDate }),
+        body: JSON.stringify({ edition, revision, revisionDate }),
       });
       const data = await response.json();
 
@@ -145,12 +149,11 @@ export default function ChecklistManagementPage() {
       }
 
       setMetadata(data.metadata);
+      setEdition(data.metadata.edition);
       setRevision(data.metadata.revision);
       setRevisionDate(data.metadata.revisionDate);
       setSuccess(
-        `Versionamento aggiornato: REV ${data.metadata.revision} del ${formatDateOnly(
-          data.metadata.revisionDate
-        )}.`
+        `Versionamento aggiornato: Ed. ${data.metadata.edition} Rev. ${data.metadata.revision} del ${formatDateOnly(data.metadata.revisionDate)}.`
       );
     } catch (versionError) {
       setError(
@@ -199,7 +202,7 @@ export default function ChecklistManagementPage() {
           <h1>Gestione checklist Excel</h1>
           <p>
             Scarica la versione attualmente in uso oppure sostituiscila con un nuovo
-            file. Puoi anche aggiornare revisione e data riportate nel documento Word.
+            file. Puoi anche aggiornare edizione, revisione e data riportate nel documento Word.
           </p>
         </div>
 
@@ -232,7 +235,7 @@ export default function ChecklistManagementPage() {
                 </div>
                 <div>
                   <dt>Versionamento</dt>
-                  <dd>REV {metadata.revision} · {formatDateOnly(metadata.revisionDate)}</dd>
+                  <dd>Ed. {metadata.edition} Rev. {metadata.revision} · {formatDateOnly(metadata.revisionDate)}</dd>
                 </div>
               </dl>
             ) : null}
@@ -297,7 +300,7 @@ export default function ChecklistManagementPage() {
           <div className={styles.versionIntro}>
             <div>
               <span className={styles.step}>VERSIONAMENTO DOCUMENTO</span>
-              <h2>Revisione della checklist generata</h2>
+              <h2>Edizione e revisione della checklist generata</h2>
               <p>
                 Questi valori verranno riportati automaticamente nell’intestazione
                 della checklist Word.
@@ -305,12 +308,25 @@ export default function ChecklistManagementPage() {
             </div>
             <div className={styles.versionPreview} aria-label="Anteprima versionamento">
               <strong>FORM 01-09</strong>
-              <strong>REV {revision || "—"}</strong>
+              <strong>Ed. {edition || "—"} Rev. {revision || "—"}</strong>
               <strong>{revisionDate ? formatDateOnly(revisionDate) : "—"}</strong>
             </div>
           </div>
 
           <form className={styles.versionForm} onSubmit={handleVersionSave}>
+            <label>
+              <span>Ed</span>
+              <input
+                type="text"
+                value={edition}
+                onChange={(event) => setEdition(event.target.value)}
+                placeholder="Es. 01"
+                maxLength={30}
+                required
+              />
+              <small>Inserisci solo il valore, senza scrivere “Ed.”.</small>
+            </label>
+
             <label>
               <span>Rev</span>
               <input
@@ -341,9 +357,11 @@ export default function ChecklistManagementPage() {
               disabled={
                 loading ||
                 savingVersion ||
+                !edition.trim() ||
                 !revision.trim() ||
                 !revisionDate ||
-                (metadata?.revision === revision.trim().replace(/^rev\s*/i, "") &&
+                (metadata?.edition === edition.trim().replace(/^ed\.?\s*/i, "") &&
+                  metadata?.revision === revision.trim().replace(/^rev\s*/i, "") &&
                   metadata?.revisionDate === revisionDate)
               }
             >
@@ -359,7 +377,7 @@ export default function ChecklistManagementPage() {
           <span aria-hidden="true">i</span>
           <p>
             <strong>Aggiornamento immediato.</strong> Dopo il salvataggio puoi tornare
-            al generatore: contenuti, revisione e data saranno letti dai dati aggiornati
+            al generatore: contenuti, edizione, revisione e data saranno letti dai dati aggiornati
             senza dover pubblicare nuovamente il sito.
           </p>
         </aside>

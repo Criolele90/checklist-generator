@@ -34,6 +34,7 @@ export async function GET(request: NextRequest) {
         uploadedAt: checklist.uploadedAt,
         size: checklist.size,
         rowCount: checklist.rows.length,
+        edition: checklist.edition,
         revision: checklist.revision,
         revisionDate: checklist.revisionDate,
       },
@@ -109,6 +110,7 @@ export async function POST(request: NextRequest) {
       rows,
       uploadedAt: new Date().toISOString(),
       size: file.size,
+      edition: currentChecklist.edition,
       revision: currentChecklist.revision,
       revisionDate: currentChecklist.revisionDate,
     };
@@ -122,6 +124,7 @@ export async function POST(request: NextRequest) {
         uploadedAt: storedChecklist.uploadedAt,
         size: storedChecklist.size,
         rowCount: storedChecklist.rows.length,
+        edition: storedChecklist.edition,
         revision: storedChecklist.revision,
         revisionDate: storedChecklist.revisionDate,
       },
@@ -170,12 +173,23 @@ export async function PATCH(request: NextRequest) {
 
   try {
     const body = await request.json();
+    const edition =
+      typeof body.edition === "string"
+        ? body.edition.trim().replace(/^ed\.?\s*/i, "")
+        : "";
     const revision =
       typeof body.revision === "string"
         ? body.revision.trim().replace(/^rev\s*/i, "")
         : "";
     const revisionDate =
       typeof body.revisionDate === "string" ? body.revisionDate.trim() : "";
+
+    if (!edition || edition.length > 30) {
+      return NextResponse.json(
+        { ok: false, error: "Inserisci un'edizione valida (massimo 30 caratteri)." },
+        { status: 400 }
+      );
+    }
 
     if (!revision || revision.length > 30) {
       return NextResponse.json(
@@ -192,7 +206,7 @@ export async function PATCH(request: NextRequest) {
     }
 
     const checklist = await getCurrentChecklist();
-    const updatedChecklist = { ...checklist, revision, revisionDate };
+    const updatedChecklist = { ...checklist, edition, revision, revisionDate };
     await saveChecklist(updatedChecklist);
 
     return NextResponse.json({
@@ -202,6 +216,7 @@ export async function PATCH(request: NextRequest) {
         uploadedAt: updatedChecklist.uploadedAt,
         size: updatedChecklist.size,
         rowCount: updatedChecklist.rows.length,
+        edition: updatedChecklist.edition,
         revision: updatedChecklist.revision,
         revisionDate: updatedChecklist.revisionDate,
       },

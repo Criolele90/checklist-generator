@@ -165,7 +165,7 @@
 
 .versionForm {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr) minmax(220px, 1fr) minmax(210px, 0.8fr);
+  grid-template-columns: minmax(140px, 0.7fr) minmax(140px, 0.7fr) minmax(220px, 1fr) minmax(210px, 0.8fr);
   gap: 18px;
   align-items: end;
 }

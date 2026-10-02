@@ -56,6 +56,7 @@ type MembroTeam = {
 
 const REVISIONE_PREDEFINITA = "08";
 const DATA_REVISIONE_PREDEFINITA = "2022-11-21";
+const EDIZIONE_PREDEFINITA = "01";
 
 function formattaDataRevisione(value: string): string {
   const [anno, mese, giorno] = value.split("-");
@@ -117,6 +118,7 @@ export default function Home() {
   const [righe, setRighe] = useState<RigaChecklist[]>(
     righeChecklist as RigaChecklist[]
   );
+  const [edizione, setEdizione] = useState(EDIZIONE_PREDEFINITA);
   const [revisione, setRevisione] = useState(REVISIONE_PREDEFINITA);
   const [dataRevisione, setDataRevisione] = useState(
     DATA_REVISIONE_PREDEFINITA
@@ -133,6 +135,9 @@ export default function Home() {
         const data = await response.json();
         if (active && Array.isArray(data.rows) && data.rows.length > 0) {
           setRighe(data.rows);
+          if (typeof data.metadata?.edition === "string") {
+            setEdizione(data.metadata.edition);
+          }
           if (typeof data.metadata?.revision === "string") {
             setRevisione(data.metadata.revision);
           }
@@ -504,7 +509,7 @@ export default function Home() {
                   spacing: { after: 40 },
                   children: [
                     new TextRun({
-                      text: `REV ${revisione}`,
+                      text: `Ed. ${edizione} Rev. ${revisione}`,
                       bold: true,
                       size: 18,
                     }),
